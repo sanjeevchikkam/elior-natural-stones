@@ -62,10 +62,10 @@ export default function ContactSection() {
             
             <div className="space-y-4">
               <span className="text-[9px] font-mono text-[#D4AF37] uppercase tracking-[0.3em] block">
-                Executive Desk
+                Contact Us
               </span>
               <h3 className="text-xl md:text-2xl font-serif font-bold text-white tracking-wide">
-                Experience Absolute Integrity in Sourcing
+                Immediate response from Many years
               </h3>
               <p className="text-xs md:text-sm text-white/50 leading-relaxed font-light">
                 We believe in zero-intermediate markups. Connect directly with our founding partners and quarry sourcing executives to curate your physical collections.
@@ -151,10 +151,10 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <h3 className="text-lg font-serif font-bold text-white tracking-wide">
-                    Quarry Sourcing & Supply Request
+                    Enquiry
                   </h3>
                   <p className="text-[10px] font-mono text-[#D4AF37] tracking-wider uppercase mt-1">
-                    Direct Response Sourcing Inquiry
+                    Direct Response from the company
                   </p>
                 </div>
               </div>
@@ -250,7 +250,7 @@ export default function ContactSection() {
                         onChange={(e) => setMessage(e.target.value)}
                         required
                         rows={4}
-                        placeholder="Please elaborate on your required dimensions, sft area, block thickness (e.g. 18mm, 20mm), and desired finish (Glossy, Honed, Leathered)."
+                        placeholder="Please tell your required dimensions, sft area (Eg: 350 sft), block thickness (Eg: 20mm)."
                         className="w-full px-4 py-3 bg-black/40 border border-white/10 focus:border-[#D4AF37]/60 rounded-sm text-sm text-white placeholder-white/30 focus:outline-none transition-all duration-300 focus:bg-black/60 focus:shadow-[0_0_15px_rgba(212,175,55,0.1)] resize-none"
                       />
                     </div>
@@ -258,7 +258,7 @@ export default function ContactSection() {
                     {/* Zero-spam direct transmission guarantee */}
                     <div className="flex items-center gap-2.5 text-white/40 text-[10px] font-mono leading-relaxed bg-black/20 p-3 rounded-sm border border-white/[0.02]">
                       <Lock className="w-3.5 h-3.5 text-[#D4AF37] shrink-0" />
-                      <span>Sourcing requests are transmitted securely to direct partner lines. No telemarketing. No unsolicited follow-ups.</span>
+                      <span>Sourcing requests are transmitted securely to direct partner lines. No unsolicited follow-ups.</span>
                     </div>
 
                     {/* Submit Sourcing Request Trigger */}
@@ -267,7 +267,7 @@ export default function ContactSection() {
                       className="w-full py-4 bg-[#D4AF37] text-[#0B0B0B] hover:bg-[#bfa032] text-xs font-bold uppercase tracking-widest transition-all duration-300 rounded-sm shadow-[0_4px_20px_rgba(212,175,55,0.2)] hover:shadow-[0_4px_25px_rgba(212,175,55,0.35)] flex items-center justify-center gap-2.5 cursor-pointer active:scale-[0.99]"
                       id="submit-sourcing-btn"
                     >
-                      Transmit Sourcing Request
+                      Send Enquiry
                       <Send className="w-3.5 h-3.5 text-[#0B0B0B]" />
                     </button>
                   </motion.form>

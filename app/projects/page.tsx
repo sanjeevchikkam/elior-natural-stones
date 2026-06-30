@@ -348,7 +348,7 @@ export default function ProjectsPage() {
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-3.5 bg-[#D4AF37] text-[#0B0B0B] hover:bg-[#bfa032] text-xs font-bold uppercase tracking-widest transition-all duration-300 rounded-sm shadow-[0_4px_20px_rgba(212,175,55,0.25)] hover:shadow-[0_4px_25px_rgba(212,175,55,0.4)] cursor-pointer"
                 id="cta-quote-btn"
               >
-                Request Consultation Quote
+                Enquiry
                 <Sparkles className="w-4 h-4 text-[#0B0B0B]" />
               </button>
               
@@ -357,7 +357,7 @@ export default function ProjectsPage() {
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-3.5 bg-transparent border border-white/20 hover:border-[#D4AF37] text-white hover:text-[#D4AF37] text-xs font-bold uppercase tracking-widest transition-all duration-300 rounded-sm hover:bg-white/[0.02]"
                 id="cta-browse-btn"
               >
-                Browse Stone Inventory
+                Browse Products
                 <ArrowRight className="w-4 h-4" />
               </Link>
             </div>

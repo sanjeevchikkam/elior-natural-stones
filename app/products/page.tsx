@@ -161,10 +161,10 @@ function ProductsContent({ onGetQuote }: { onGetQuote: () => void }) {
                         id={`product-image-${prod.id}`}
                       />
                       {/* Premium rating overlay badge */}
-                      <div className="absolute top-4 right-4 bg-black/70 backdrop-blur-md border border-white/10 px-2 py-1 rounded-sm flex items-center gap-1">
+                      {/* <div className="absolute top-4 right-4 bg-black/70 backdrop-blur-md border border-white/10 px-2 py-1 rounded-sm flex items-center gap-1">
                         <Star className="w-3 h-3 text-[#D4AF37] fill-[#D4AF37]" />
                         <span className="text-[10px] font-mono font-bold text-white">{prod.rating.toFixed(1)}</span>
-                      </div>
+                      </div> */}
                     </div>
 
                     {/* Meta info details */}

@@ -65,19 +65,6 @@ const MILESTONES: Milestone[] = [
       "Supplied prestigious commercial lobbies and high-rise countertops",
       "Introduced non-porous stain-resistant architectural surfaces"
     ]
-  },
-  {
-    year: "2026",
-    brand: "Elior Natural Stones",
-    subtitle: "The Ultimate Luxury Evolution & Brand Rebirth",
-    description: "The peak of our 36-year legacy. Rebranded as 'Elior' — meaning 'My God is Light' in Hebrew — celebrating the breathtaking beauty of light filtering through exotic natural quartzites, onyx, and translucent marbles. Elior is a digital-first, high-touch luxury concierge sourcing the world’s most magnificent exotic stones directly for premium, elite architects and designers.",
-    image: "/cat01_01.png",
-    tag: "Luxury Rebirth",
-    achievements: [
-      "Exclusive direct-from-quarry exotic imports from Italy, Spain, and Brazil",
-      "Digital Concierge with virtual Dry Lay full-slab matching preview technology",
-      "Opening of our ultra-luxury boutique showroom with private curations"
-    ]
   }
 ];
 
@@ -338,7 +325,7 @@ export default function OurStoryPage() {
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-3.5 bg-[#D4AF37] text-[#0B0B0B] hover:bg-[#bfa032] text-xs font-bold uppercase tracking-widest transition-all duration-300 rounded-sm shadow-[0_4px_20px_rgba(212,175,55,0.25)] hover:shadow-[0_4px_25px_rgba(212,175,55,0.4)] cursor-pointer"
                 id="cta-quote-btn"
               >
-                Request Custom Quote
+                Enquiry
                 <Sparkles className="w-4 h-4 text-[#0B0B0B]" />
               </button>
               
@@ -347,7 +334,7 @@ export default function OurStoryPage() {
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-3.5 bg-transparent border border-white/20 hover:border-[#D4AF37] text-white hover:text-[#D4AF37] text-xs font-bold uppercase tracking-widest transition-all duration-300 rounded-sm hover:bg-white/[0.02]"
                 id="cta-browse-btn"
               >
-                Browse Slabs
+                Browse Products
                 <ArrowRight className="w-4 h-4" />
               </Link>
             </div>

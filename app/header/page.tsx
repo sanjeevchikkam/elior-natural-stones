@@ -191,7 +191,7 @@ export default function HeaderSection({ onGetQuote }: HeaderSectionProps) {
             id="get-quote-btn-desktop"
           >
             <Sparkles className="w-3.5 h-3.5" />
-            Get Quote
+            Enquiry
           </button>
 
           {/* Luxury Shopping Cart Icon Link */}

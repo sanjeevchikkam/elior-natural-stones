@@ -23,12 +23,6 @@ export default function StorySection() {
       brand: "STONEX",
       role: "Modern Engineered Surfaces",
       desc: "Introducing specialized premium quartz slab lines for high-end modern designs."
-    },
-    {
-      year: "2026",
-      brand: "Elior Natural Stones",
-      role: "Ultimate Luxury Evolution",
-      desc: "Direct-from-quarry exotic imports, virtual matching preview, and luxury rebrand."
     }
   ];
 

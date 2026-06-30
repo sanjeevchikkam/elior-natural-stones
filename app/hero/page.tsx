@@ -160,7 +160,7 @@ export default function HeroSection({ onGetQuote }: HeroSectionProps) {
                 className="inline-flex items-center justify-center gap-2.5 px-8 py-3.5 bg-[#D4AF37] hover:bg-[#bfa032] text-[#0B0B0B] text-xs font-bold uppercase tracking-widest transition-all duration-300 rounded-sm shadow-[0_10px_25px_rgba(212,175,55,0.25)] hover:shadow-[0_12px_30px_rgba(212,175,55,0.4)] group cursor-pointer"
                 id="hero-cta-quote"
               >
-                Get Quote
+                Enquiry
                 <Sparkles className="w-4 h-4 text-[#0B0B0B] transition-transform duration-300 group-hover:rotate-12" />
               </button>
               <Link
