@@ -192,7 +192,7 @@ export default function ProjectsSection() {
                     href="/projects" 
                     className="inline-flex items-center gap-1.5 text-[10px] font-mono text-[#D4AF37]/80 hover:text-[#D4AF37] transition-colors duration-200"
                   >
-                    View Project Slabs
+                    View Projects
                     <ArrowRight className="w-3 h-3" />
                   </Link>
                 </div>

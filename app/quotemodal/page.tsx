@@ -22,7 +22,7 @@ export default function QuoteModal({ isOpen, onClose }: QuoteModalProps) {
     if (!name || !mobile || !category || !sft) return;
 
     // Format WhatsApp message beautifully
-    const rawMessage = `Hello Elior Natural Stones,\n\nI would like to request a custom price estimate and availability for the following category:\n\n👤 *Customer Name:* ${name}\n📞 *Mobile Number:* ${mobile}\n🧱 *Stone Category:* ${category}\n📐 *Enquiry Sft:* ${sft}\n\nPlease connect with me regarding raw block availability, premium pricing, and custom finishes.\n\nThank you!`;
+    const rawMessage = `Hello Elior Natural Stones,\n\nI would like to request a custom price estimate and availability for the following category:\n\n👤 *Customer Name:* ${name}\n📞 *Mobile Number:* ${mobile}\n🧱 *Stone Category:* ${category}\n📐 *Required Sft:* ${sft}\n\nPlease connect with me regarding raw block availability, premium pricing, and custom finishes.\n\nThank you!`;
     const whatsappUrl = `https://wa.me/918125958071?text=${encodeURIComponent(rawMessage)}`;
 
     setIsSubmitted(true);
@@ -94,7 +94,7 @@ export default function QuoteModal({ isOpen, onClose }: QuoteModalProps) {
                     </div>
                     <div>
                       <h2 className="text-xl md:text-2xl font-serif font-bold text-white tracking-wide" id="modal-title">
-                        Request A Quote
+                        Enquiry
                       </h2>
                       <p className="text-xs font-mono text-[#D4AF37] tracking-wider uppercase mt-1">
                         Get direct quarry pricing & details
@@ -119,7 +119,7 @@ export default function QuoteModal({ isOpen, onClose }: QuoteModalProps) {
                           value={name}
                           onChange={(e) => setName(e.target.value)}
                           required
-                          placeholder="e.g. Sanjeev Chikkam"
+                          placeholder="e.g. Sanjeev Naidu Chikkam"
                           className="w-full pl-11 pr-4 py-3 bg-black/40 border border-white/10 focus:border-[#D4AF37]/60 rounded-sm text-sm text-white placeholder-white/30 focus:outline-none transition-all duration-300 focus:bg-black/60 focus:shadow-[0_0_15px_rgba(212,175,55,0.1)]"
                         />
                       </div>
@@ -179,7 +179,7 @@ export default function QuoteModal({ isOpen, onClose }: QuoteModalProps) {
                     {/* Enquiry sft input */}
                     <div className="flex flex-col gap-2" id="form-group-sft">
                       <label htmlFor="enquiry-sft" className="text-xs font-mono font-medium tracking-wider text-white/70 uppercase">
-                        Enquiry Sft *
+                        Required Sft *
                       </label>
                       <div className="relative">
                         <span className="absolute left-3.5 top-1/2 -translate-y-1/2 text-white/30">
@@ -191,7 +191,7 @@ export default function QuoteModal({ isOpen, onClose }: QuoteModalProps) {
                           value={sft}
                           onChange={(e) => setSft(e.target.value)}
                           required
-                          placeholder="e.g. 1500 Sft"
+                          placeholder="Sft"
                           className="w-full pl-11 pr-4 py-3 bg-black/40 border border-white/10 focus:border-[#D4AF37]/60 rounded-sm text-sm text-white placeholder-white/30 focus:outline-none transition-all duration-300 focus:bg-black/60 focus:shadow-[0_0_15px_rgba(212,175,55,0.1)]"
                         />
                       </div>

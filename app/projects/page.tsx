@@ -38,8 +38,6 @@ const LUXURY_PROJECTS: Project[] = [
     image: "/cat01_01.png",
     year: "2025",
     stats: [
-      { label: "Slabs Curated", value: "8 Premium Slabs" },
-      { label: "Precision Cut", value: "0.2mm Tolerance" },
       { label: "Total Area", value: "1,850 Sq.Ft" }
     ]
   },
@@ -53,8 +51,6 @@ const LUXURY_PROJECTS: Project[] = [
     image: "/cat01_02.png",
     year: "2025",
     stats: [
-      { label: "Book-matching", value: "4-Way Quad-Match" },
-      { label: "Finish Quality", value: "95% Gloss Factor" },
       { label: "Total Area", value: "4,200 Sq.Ft" }
     ]
   },
@@ -68,8 +64,6 @@ const LUXURY_PROJECTS: Project[] = [
     image: "/cat06_01.png",
     year: "2026",
     stats: [
-      { label: "Counter Span", value: "24 Ft Jointless" },
-      { label: "Edge Profile", value: "Double Mitered Ogee" },
       { label: "Total Area", value: "1,100 Sq.Ft" }
     ]
   }

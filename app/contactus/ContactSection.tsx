@@ -91,7 +91,7 @@ export default function ContactSection() {
                   <Award className="w-4 h-4 text-[#D4AF37]" />
                 </div>
                 <div>
-                  <h4 className="text-xs font-bold text-white tracking-wide">ASTM Tested</h4>
+                  <h4 className="text-xs font-bold text-white tracking-wide">Fully Tested</h4>
                   <p className="text-[10px] text-white/40 mt-1 leading-relaxed">
                     Verified compressive strength & structural load capacity specs.
                   </p>
