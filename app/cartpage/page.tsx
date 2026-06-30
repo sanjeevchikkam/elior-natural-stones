@@ -2,27 +2,26 @@
 
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
-import { Trash2, Plus, Minus, ArrowLeft, ShoppingBag, Sparkles, MessageSquare, Check } from "lucide-react";
+import { Trash2, ArrowLeft, ShoppingBag, MessageSquare, Check } from "lucide-react";
 import Link from "next/link";
 import HeaderSection from "@/app/header/page";
 import FooterSection from "@/app/footer/page";
 import QuoteModal from "@/app/quotemodal/page";
-import { getCart, removeFromCart, updateQuantity, getCartTotal, clearCart, CartItem } from "@/lib/cartStore";
+import { getCart, removeFromCart, clearCart, CartItem } from "@/lib/cartStore";
 
 export default function CartPage() {
   const [isQuoteOpen, setIsQuoteOpen] = useState(false);
   const [cartItems, setCartItems] = useState<CartItem[]>([]);
-  const [total, setTotal] = useState(0);
   const [isCheckingOut, setIsCheckingOut] = useState(false);
   const [name, setName] = useState("");
   const [mobile, setMobile] = useState("");
   const [location, setLocation] = useState("");
+  const [message, setMessage] = useState("");
   const [itemSfts, setItemSfts] = useState<{ [key: string]: string }>({});
 
   // Sync state with localstorage on mount and changes
   const syncCartState = () => {
     setCartItems(getCart());
-    setTotal(getCartTotal());
   };
 
   useEffect(() => {
@@ -32,14 +31,6 @@ export default function CartPage() {
       window.removeEventListener("cart-updated", syncCartState);
     };
   }, []);
-
-  const handleIncrement = (item: CartItem) => {
-    updateQuantity(item.id, item.quantity + 1);
-  };
-
-  const handleDecrement = (item: CartItem) => {
-    updateQuantity(item.id, item.quantity - 1);
-  };
 
   const handleRemove = (id: string) => {
     removeFromCart(id);
@@ -57,10 +48,10 @@ export default function CartPage() {
     let itemSummary = "";
     cartItems.forEach((item, index) => {
       const sftVal = itemSfts[item.id] || "Not specified";
-      itemSummary += `${index + 1}. *${item.name}* (${item.categoryName})\n   Enquiry Sft: *${sftVal}*\n   Quantity: ${item.quantity}\n\n`;
+      itemSummary += `${index + 1}. *${item.name}* (${item.categoryName})\n   Enquiry Sft: *${sftVal}*\n\n`;
     });
 
-    const clientInfo = `👤 *Customer Name:* ${name || "Not specified"}\n📞 *Mobile Number:* ${mobile || "Not specified"}\n📍 *Delivery Location:* ${location || "Not specified"}\n\n`;
+    const clientInfo = `👤 *Customer Name:* ${name || "Not specified"}\n📞 *Mobile Number:* ${mobile || "Not specified"}\n📍 *Delivery Location:* ${location || "Not specified"}\n✉️ *Message:* ${message || "Not specified"}\n\n`;
 
     const rawMessage = `Hello Elior Natural Stones,\n\nI would like to request a custom price estimate and delivery timeframe for the following natural stones:\n\n${clientInfo}📦 *Stone Order Summary:*\n${itemSummary}Please connect with me regarding raw availability, shipping logistics, and our custom slab cuts.\n\nThank you!`;
     
@@ -76,6 +67,7 @@ export default function CartPage() {
       setName("");
       setMobile("");
       setLocation("");
+      setMessage("");
       setItemSfts({});
     }, 1500);
   };
@@ -156,7 +148,7 @@ export default function CartPage() {
                     id={`cart-item-${item.id}`}
                   >
                     {/* Square Image & Title Column */}
-                    <div className="flex items-center gap-4 w-full sm:w-auto">
+                    <div className="flex items-center gap-4 w-full flex-grow">
                       <div className="w-16 h-16 relative rounded-sm overflow-hidden border border-white/5 bg-black/40 flex-shrink-0">
                         <img
                           src={item.image}
@@ -165,69 +157,39 @@ export default function CartPage() {
                           className="w-full h-full object-cover"
                         />
                       </div>
-                      <div className="space-y-1">
-                        <span className="text-[9px] font-mono tracking-wider text-[#D4AF37] uppercase">
+                      <div className="space-y-1.5 w-full">
+                        <span className="text-[9px] font-mono tracking-wider text-[#D4AF37] uppercase block">
                           {item.categoryName}
                         </span>
-                        <h3 className="text-sm font-semibold text-white tracking-wide">
-                          {item.name}
-                        </h3>
-                        <div className="mt-2 flex items-center gap-2" id={`sft-wrapper-${item.id}`}>
-                          <label className="text-[10px] font-mono text-white/50 whitespace-nowrap">Enquiry Sft *</label>
-                          <input
-                            type="text"
-                            required
-                            placeholder="e.g. 350 Sft"
-                            value={itemSfts[item.id] || ""}
-                            onChange={(e) => handleSftChange(item.id, e.target.value)}
-                            className="w-28 bg-black/40 border border-white/10 focus:border-[#D4AF37]/60 rounded-sm text-[11px] py-1 px-2 text-white focus:outline-none transition font-mono"
-                            id={`sft-input-${item.id}`}
-                          />
+                        <div className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-6 flex-wrap">
+                          <h3 className="text-sm font-semibold text-white tracking-wide">
+                            {item.name}
+                          </h3>
+                          <div className="flex items-center gap-2" id={`sft-wrapper-${item.id}`}>
+                            <label htmlFor={`sft-input-${item.id}`} className="text-[10px] font-mono text-white/50 whitespace-nowrap">Required enquiry:</label>
+                            <input
+                              type="text"
+                              id={`sft-input-${item.id}`}
+                              required
+                              placeholder="sft"
+                              value={itemSfts[item.id] || ""}
+                              onChange={(e) => handleSftChange(item.id, e.target.value)}
+                              className="w-24 bg-black/40 border border-white/10 focus:border-[#D4AF37]/60 rounded-sm text-[11px] py-1 px-2.5 text-white focus:outline-none transition font-mono"
+                            />
+                          </div>
                         </div>
                       </div>
                     </div>
 
-                    {/* Quantity Selector, Price calculations & Trash Action */}
-                    <div className="flex items-center justify-between sm:justify-end gap-8 w-full sm:w-auto border-t sm:border-t-0 border-white/5 pt-3 sm:pt-0">
-                      
-                      {/* Plus/Minus counter */}
-                      <div className="flex items-center border border-white/10 rounded-sm bg-black/40">
-                        <button
-                          onClick={() => handleDecrement(item)}
-                          className="p-2 text-white/60 hover:text-[#D4AF37] hover:bg-white/5 transition focus:outline-none"
-                          aria-label="Decrease quantity"
-                        >
-                          <Minus className="w-3.5 h-3.5" />
-                        </button>
-                        <span className="px-3 text-xs font-mono font-bold text-white">
-                          {item.quantity}
-                        </span>
-                        <button
-                          onClick={() => handleIncrement(item)}
-                          className="p-2 text-white/60 hover:text-[#D4AF37] hover:bg-white/5 transition focus:outline-none"
-                          aria-label="Increase quantity"
-                        >
-                          <Plus className="w-3.5 h-3.5" />
-                        </button>
-                      </div>
-
-                      {/* Line Item Total */}
-                      <div className="text-right flex flex-col justify-center min-w-[80px]">
-                        <span className="text-[9px] font-mono uppercase text-white/40">Total</span>
-                        <span className="text-sm font-bold text-[#D4AF37] font-mono">
-                          ${(parseFloat(item.price.replace(/[^0-9.]/g, "")) * item.quantity).toFixed(2)}
-                        </span>
-                      </div>
-
-                      {/* Delete trash button */}
+                    {/* Trash Action */}
+                    <div className="flex items-center justify-end w-full sm:w-auto border-t sm:border-t-0 border-white/5 pt-3 sm:pt-0 shrink-0">
                       <button
                         onClick={() => handleRemove(item.id)}
-                        className="p-2 bg-red-500/10 hover:bg-red-500/20 text-red-400 border border-transparent hover:border-red-500/30 rounded-sm transition focus:outline-none"
+                        className="p-2 bg-red-500/10 hover:bg-red-500/20 text-red-400 border border-transparent hover:border-red-500/30 rounded-sm transition focus:outline-none cursor-pointer"
                         aria-label="Remove item"
                       >
                         <Trash2 className="w-4 h-4" />
                       </button>
-
                     </div>
                   </motion.div>
                 ))}
@@ -243,28 +205,8 @@ export default function CartPage() {
                     Estimate Summary
                   </h3>
 
-                  {/* Pricing lines */}
-                  <div className="space-y-3 font-mono text-xs">
-                    <div className="flex justify-between text-white/60">
-                      <span>Stone Varieties</span>
-                      <span>{cartItems.length}</span>
-                    </div>
-                    <div className="flex justify-between text-white/60">
-                      <span>Total Base Units</span>
-                      <span>{cartItems.reduce((acc, item) => acc + item.quantity, 0)}</span>
-                    </div>
-                    <div className="flex justify-between text-white/60">
-                      <span>Estimate Valuation</span>
-                      <span>TBD (Custom Cuts)</span>
-                    </div>
-                    <div className="border-t border-white/10 pt-4 flex justify-between items-baseline">
-                      <span className="text-sm font-serif font-bold text-white">Estimated Base</span>
-                      <span className="text-xl font-bold text-[#D4AF37]">${total.toFixed(2)}</span>
-                    </div>
-                  </div>
-
                   {/* Direct Contact Form before WhatsApp handover */}
-                  <form onSubmit={handleCheckout} className="space-y-4 border-t border-white/5 pt-4">
+                  <form onSubmit={handleCheckout} className="space-y-4">
                     <span className="text-xs font-mono font-bold text-[#D4AF37] uppercase tracking-wider block">
                       Enquiry Contact Details (Required)
                     </span>
@@ -304,6 +246,18 @@ export default function CartPage() {
                         onChange={(e) => setLocation(e.target.value)}
                         className="w-full bg-black/40 border border-white/10 focus:border-[#D4AF37]/60 rounded-sm text-xs py-2 px-3 text-white focus:outline-none transition"
                         id="enquiry-location-input"
+                      />
+                    </div>
+
+                    <div className="space-y-1">
+                      <label className="text-[10px] font-mono uppercase text-white/40 block">Message</label>
+                      <textarea
+                        placeholder="e.g. Please share pricing and availability for these finishes"
+                        value={message}
+                        onChange={(e) => setMessage(e.target.value)}
+                        rows={3}
+                        className="w-full bg-black/40 border border-white/10 focus:border-[#D4AF37]/60 rounded-sm text-xs py-2 px-3 text-white focus:outline-none transition resize-none"
+                        id="enquiry-message-input"
                       />
                     </div>
 
