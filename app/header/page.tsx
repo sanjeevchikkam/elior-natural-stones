@@ -167,7 +167,7 @@ export default function HeaderSection({ onGetQuote }: HeaderSectionProps) {
           </Link>
 
           <Link
-            href="/#contact"
+            href="/contactus"
             className="text-sm font-medium tracking-widest uppercase text-[#E5E5E5] hover:text-[#D4AF37] transition-colors duration-300 relative group py-2"
             id="nav-item-contact"
           >

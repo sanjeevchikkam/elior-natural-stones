@@ -12,8 +12,8 @@ export default function FooterSection({ onGetQuote }: FooterSectionProps) {
     { name: 'Home', href: '/' },
     { name: 'Products', href: '/products' },
     { name: 'Our Story', href: '/ourstory' },
-    { name: 'Projects', href: '/#projects' },
-    { name: 'Contact Us', href: '/#contact' },
+    { name: 'Projects', href: '/projects' },
+    { name: 'Contact Us', href: '/contactus' },
   ];
 
   const whatsappMessage = encodeURIComponent(

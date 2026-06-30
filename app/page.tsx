@@ -6,6 +6,7 @@ import HeroSection from './hero/page';
 import CategoriesSection from './categories/page';
 import StorySection from './ourstory/StorySection';
 import FooterSection from './footer/page';
+import ContactSection from './contactus/ContactSection';
 import ProjectsSection from './projects/ProjectsSection';
 import QuoteModal from './quotemodal/page';
 
@@ -24,6 +25,7 @@ export default function Page() {
         <CategoriesSection />
         <StorySection />
         <ProjectsSection />
+        <ContactSection />
       </main>
       
       {/* 3. Footer branding & contact section */}
