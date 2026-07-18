@@ -108,7 +108,7 @@ export default function HeroSection({ onGetQuote }: HeroSectionProps) {
                   animate={{ y: 0, opacity: 1 }}
                   exit={{ y: -20, opacity: 0 }}
                   transition={{ duration: 0.5 }}
-                  className="text-xs font-mono font-bold tracking-[0.3em] text-[#D4AF37] block uppercase"
+                  className="text-xs font-mono font-bold tracking-[0.3em] text-[#B9B1A5] block uppercase"
                 >
                   {backgroundImages[currentSlide].tag}
                 </motion.span>
@@ -124,7 +124,7 @@ export default function HeroSection({ onGetQuote }: HeroSectionProps) {
               id="hero-heading"
             >
               Premium Granite,<br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FFFFFF] via-[#F5E6B3] to-[#D4AF37] drop-shadow-sm">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FFFFFF] via-[#F5E6B3] to-[#B9B1A5] drop-shadow-sm">
                 & Natural Stones
               </span>
             </motion.h1>
@@ -157,7 +157,7 @@ export default function HeroSection({ onGetQuote }: HeroSectionProps) {
                     window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
                   }
                 }}
-                className="inline-flex items-center justify-center gap-2.5 px-8 py-3.5 bg-[#D4AF37] hover:bg-[#bfa032] text-[#0B0B0B] text-xs font-bold uppercase tracking-widest transition-all duration-300 rounded-sm shadow-[0_10px_25px_rgba(212,175,55,0.25)] hover:shadow-[0_12px_30px_rgba(212,175,55,0.4)] group cursor-pointer"
+                className="inline-flex items-center justify-center gap-2.5 px-8 py-3.5 bg-[#B9B1A5] hover:bg-[#B9B1A5] text-[#0B0B0B] text-xs font-bold uppercase tracking-widest transition-all duration-300 rounded-sm shadow-[0_10px_25px_rgba(212,175,55,0.25)] hover:shadow-[0_12px_30px_rgba(212,175,55,0.4)] group cursor-pointer"
                 id="hero-cta-quote"
               >
                 Enquiry
@@ -165,7 +165,7 @@ export default function HeroSection({ onGetQuote }: HeroSectionProps) {
               </button>
               <Link
                 href="/products"
-                className="inline-flex items-center justify-center gap-2.5 px-8 py-3.5 bg-transparent border border-white/20 hover:border-[#D4AF37] text-white hover:text-[#D4AF37] text-xs font-bold uppercase tracking-widest transition-all duration-300 rounded-sm hover:bg-white/[0.03]"
+                className="inline-flex items-center justify-center gap-2.5 px-8 py-3.5 bg-transparent border border-white/20 hover:border-[#B9B1A5] text-white hover:text-[#B9B1A5] text-xs font-bold uppercase tracking-widest transition-all duration-300 rounded-sm hover:bg-white/[0.03]"
                 id="hero-cta-services"
               >
                 View Products
@@ -184,7 +184,7 @@ export default function HeroSection({ onGetQuote }: HeroSectionProps) {
                   animate={{ opacity: 1, scale: 1, rotate: 0 }}
                   exit={{ opacity: 0, scale: 0.9, rotate: -2 }}
                   transition={{ duration: 0.8, ease: 'easeOut' }}
-                  className="absolute inset-0 rounded-sm overflow-hidden border border-[#D4AF37]/30 shadow-[0_20px_50px_rgba(0,0,0,0.5)] bg-black/40 p-[3px]"
+                  className="absolute inset-0 rounded-sm overflow-hidden border border-[#B9B1A5]/30 shadow-[0_20px_50px_rgba(0,0,0,0.5)] bg-black/40 p-[3px]"
                   id="right-showcase-slide"
                 >
                   <div className="relative w-full h-full rounded-sm overflow-hidden">
@@ -199,7 +199,7 @@ export default function HeroSection({ onGetQuote }: HeroSectionProps) {
                     {/* Caption Overlays */}
                     <div className="absolute bottom-5 left-5 right-5 flex justify-between items-end">
                       <div>
-                        <span className="text-[10px] font-mono uppercase tracking-[0.2em] text-[#D4AF37]">
+                        <span className="text-[10px] font-mono uppercase tracking-[0.2em] text-[#B9B1A5]">
                           Featured Work
                         </span>
                         <h3 className="text-lg font-serif font-semibold text-white tracking-wide mt-1">
@@ -209,7 +209,7 @@ export default function HeroSection({ onGetQuote }: HeroSectionProps) {
                           {backgroundImages[currentSlide].subtitle}
                         </p>
                       </div>
-                      <div className="p-2 bg-[#D4AF37] rounded-sm shadow-md flex items-center justify-center">
+                      <div className="p-2 bg-[#B9B1A5] rounded-sm shadow-md flex items-center justify-center">
                         <Camera className="w-4 h-4 text-[#0B0B0B]" />
                       </div>
                     </div>
@@ -221,14 +221,14 @@ export default function HeroSection({ onGetQuote }: HeroSectionProps) {
               <div className="absolute -bottom-6 right-0 flex items-center gap-2 z-30" id="manual-slider-arrows">
                 <button
                   onClick={handlePrev}
-                  className="p-2 rounded-sm bg-white/5 border border-white/10 text-white hover:text-[#D4AF37] hover:bg-white/10 transition-all duration-300"
+                  className="p-2 rounded-sm bg-white/5 border border-white/10 text-white hover:text-[#B9B1A5] hover:bg-white/10 transition-all duration-300"
                   aria-label="Previous slide"
                 >
                   <ChevronLeft className="w-4 h-4" />
                 </button>
                 <button
                   onClick={handleNext}
-                  className="p-2 rounded-sm bg-white/5 border border-white/10 text-white hover:text-[#D4AF37] hover:bg-white/10 transition-all duration-300"
+                  className="p-2 rounded-sm bg-white/5 border border-white/10 text-white hover:text-[#B9B1A5] hover:bg-white/10 transition-all duration-300"
                   aria-label="Next slide"
                 >
                   <ChevronRight className="w-4 h-4" />
@@ -260,7 +260,7 @@ export default function HeroSection({ onGetQuote }: HeroSectionProps) {
           }}
         >
           {/* Mouse scroll body animation */}
-          <div className="w-5 h-8 rounded-full border border-white/20 group-hover:border-[#D4AF37]/80 flex justify-center p-1.5 transition-colors duration-300">
+          <div className="w-5 h-8 rounded-full border border-white/20 group-hover:border-[#B9B1A5]/80 flex justify-center p-1.5 transition-colors duration-300">
             <motion.div
               animate={{
                 y: [0, 10, 0],
@@ -271,17 +271,17 @@ export default function HeroSection({ onGetQuote }: HeroSectionProps) {
                 repeat: Infinity,
                 ease: "easeInOut"
               }}
-              className="w-1 h-1.5 bg-[#D4AF37] rounded-full"
+              className="w-1 h-1.5 bg-[#B9B1A5] rounded-full"
             />
           </div>
 
-          <span className="text-[9px] font-mono tracking-[0.3em] text-white/40 group-hover:text-[#D4AF37]/90 uppercase transition-colors duration-300">
+          <span className="text-[9px] font-mono tracking-[0.3em] text-white/40 group-hover:text-[#B9B1A5]/90 uppercase transition-colors duration-300">
             Discover More
           </span>
           
           {/* Animated golden arrow down */}
           <motion.svg 
-            className="w-4 h-4 text-[#D4AF37]/70 group-hover:text-[#D4AF37] transition-colors duration-300 mt-1" 
+            className="w-4 h-4 text-[#B9B1A5]/70 group-hover:text-[#B9B1A5] transition-colors duration-300 mt-1" 
             fill="none" 
             viewBox="0 0 24 24" 
             stroke="currentColor" 
@@ -318,10 +318,10 @@ export default function HeroSection({ onGetQuote }: HeroSectionProps) {
                     animate={{ width: '100%' }}
                     key={currentSlide}
                     transition={{ duration: 6, ease: 'linear' }}
-                    className="absolute top-0 left-0 h-full bg-[#D4AF37]"
+                    className="absolute top-0 left-0 h-full bg-[#B9B1A5]"
                   />
                 ) : (
-                  <div className={`absolute top-0 left-0 h-full w-0 bg-[#D4AF37] group-hover:w-[30%] transition-all duration-300`} />
+                  <div className={`absolute top-0 left-0 h-full w-0 bg-[#B9B1A5] group-hover:w-[30%] transition-all duration-300`} />
                 )}
               </div>
             </button>

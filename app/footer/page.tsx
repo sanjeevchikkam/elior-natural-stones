@@ -24,13 +24,13 @@ export default function FooterSection({ onGetQuote }: FooterSectionProps) {
   return (
     <footer id="contact" className="bg-[#070707] border-t border-white/5 pt-16 pb-8 text-[#E5E5E5] relative z-20">
       {/* Background radial soft gold glow */}
-      <div className="absolute bottom-0 right-0 w-[300px] h-[300px] bg-[#D4AF37]/5 blur-[120px] rounded-full pointer-events-none" />
+      <div className="absolute bottom-0 right-0 w-[300px] h-[300px] bg-[#B9B1A5]/5 blur-[120px] rounded-full pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-12 gap-12 mb-16">
         {/* Left Column: Brand Identity */}
         <div className="md:col-span-5 flex flex-col items-start gap-5" id="footer-col-brand">
           <div className="flex items-center gap-3" id="footer-logo-row">
-            <div className="relative w-9 h-9 rounded-full overflow-hidden border border-[#D4AF37]/30 p-[1.5px]" id="footer-logo-wrapper">
+            <div className="relative w-9 h-9 rounded-full overflow-hidden border border-[#B9B1A5]/30 p-[1.5px]" id="footer-logo-wrapper">
               <img
                 src="/sample1.png"
                 alt="MK Logo"
@@ -43,7 +43,7 @@ export default function FooterSection({ onGetQuote }: FooterSectionProps) {
               <span className="text-white font-serif text-base font-bold tracking-widest leading-none" id="footer-brand-title">
                 ELIOR
               </span>
-              <span className="text-[9px] text-[#D4AF37] font-mono tracking-[0.3em] uppercase leading-none mt-0.5" id="footer-brand-subtitle">
+              <span className="text-[9px] text-[#B9B1A5] font-mono tracking-[0.3em] uppercase leading-none mt-0.5" id="footer-brand-subtitle">
                 Natural Stones
               </span>
             </div>
@@ -58,7 +58,7 @@ export default function FooterSection({ onGetQuote }: FooterSectionProps) {
               href="https://instagram.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-8 h-8 rounded-full border border-white/10 hover:border-[#D4AF37] flex items-center justify-center text-white/60 hover:text-[#D4AF37] hover:bg-white/[0.02] transition-all duration-300"
+              className="w-8 h-8 rounded-full border border-white/10 hover:border-[#B9B1A5] flex items-center justify-center text-white/60 hover:text-[#B9B1A5] hover:bg-white/[0.02] transition-all duration-300"
               aria-label="Instagram Profile"
               id="footer-social-instagram"
             >
@@ -68,7 +68,7 @@ export default function FooterSection({ onGetQuote }: FooterSectionProps) {
               href="https://facebook.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-8 h-8 rounded-full border border-white/10 hover:border-[#D4AF37] flex items-center justify-center text-white/60 hover:text-[#D4AF37] hover:bg-white/[0.02] transition-all duration-300"
+              className="w-8 h-8 rounded-full border border-white/10 hover:border-[#B9B1A5] flex items-center justify-center text-white/60 hover:text-[#B9B1A5] hover:bg-white/[0.02] transition-all duration-300"
               aria-label="Facebook Profile"
               id="footer-social-facebook"
             >
@@ -79,7 +79,7 @@ export default function FooterSection({ onGetQuote }: FooterSectionProps) {
 
         {/* Center Column: Quick Navigation Links */}
         <div className="md:col-span-3 flex flex-col gap-5" id="footer-col-links">
-          <h4 className="text-xs font-mono font-semibold uppercase tracking-[0.2em] text-[#D4AF37]" id="quick-links-header">
+          <h4 className="text-xs font-mono font-semibold uppercase tracking-[0.2em] text-[#B9B1A5]" id="quick-links-header">
             Quick Links
           </h4>
           <ul className="flex flex-col gap-3" id="quick-links-list">
@@ -87,10 +87,10 @@ export default function FooterSection({ onGetQuote }: FooterSectionProps) {
               <li key={link.name}>
                 <Link
                   href={link.href}
-                  className="text-sm text-[#E5E5E5]/70 hover:text-[#D4AF37] transition-all duration-300 flex items-center gap-2 group"
+                  className="text-sm text-[#E5E5E5]/70 hover:text-[#B9B1A5] transition-all duration-300 flex items-center gap-2 group"
                   id={`footer-link-${link.name.toLowerCase().replace(/\s+/g, '-')}`}
                 >
-                  <span className="w-1 h-1 rounded-full bg-[#D4AF37] scale-0 group-hover:scale-100 transition-transform duration-300" />
+                  <span className="w-1 h-1 rounded-full bg-[#B9B1A5] scale-0 group-hover:scale-100 transition-transform duration-300" />
                   {link.name}
                 </Link>
               </li>
@@ -100,7 +100,7 @@ export default function FooterSection({ onGetQuote }: FooterSectionProps) {
 
         {/* Right Column: Contact Details */}
         <div className="md:col-span-4 flex flex-col gap-5" id="footer-col-contact">
-          <h4 className="text-xs font-mono font-semibold uppercase tracking-[0.2em] text-[#D4AF37]" id="contact-info-header">
+          <h4 className="text-xs font-mono font-semibold uppercase tracking-[0.2em] text-[#B9B1A5]" id="contact-info-header">
             Contact Us
           </h4>
           <div className="flex flex-col gap-4" id="contact-info-items">
@@ -110,8 +110,8 @@ export default function FooterSection({ onGetQuote }: FooterSectionProps) {
               className="flex items-center gap-3 text-sm text-[#E5E5E5]/70 hover:text-white transition-colors duration-300 group"
               id="footer-phone-link"
             >
-              <span className="w-8 h-8 rounded-sm bg-white/5 flex items-center justify-center group-hover:bg-[#D4AF37]/10 group-hover:border-[#D4AF37]/30 border border-transparent transition-all duration-300">
-                <Phone className="w-3.5 h-3.5 text-[#D4AF37]" />
+              <span className="w-8 h-8 rounded-sm bg-white/5 flex items-center justify-center group-hover:bg-[#B9B1A5]/10 group-hover:border-[#B9B1A5]/30 border border-transparent transition-all duration-300">
+                <Phone className="w-3.5 h-3.5 text-[#B9B1A5]" />
               </span>
               +91 81259 58071
             </a>
@@ -126,11 +126,11 @@ export default function FooterSection({ onGetQuote }: FooterSectionProps) {
                   window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
                 }
               }}
-              className="flex items-center gap-3 text-sm text-[#E5E5E5]/70 hover:text-[#D4AF37] transition-colors duration-300 group cursor-pointer text-left w-full bg-transparent border-none p-0 focus:outline-none"
+              className="flex items-center gap-3 text-sm text-[#E5E5E5]/70 hover:text-[#B9B1A5] transition-colors duration-300 group cursor-pointer text-left w-full bg-transparent border-none p-0 focus:outline-none"
               id="footer-whatsapp-link"
             >
-              <span className="w-8 h-8 rounded-sm bg-white/5 flex items-center justify-center group-hover:bg-[#D4AF37]/10 group-hover:border-[#D4AF37]/30 border border-transparent transition-all duration-300">
-                <MessageSquare className="w-3.5 h-3.5 text-[#D4AF37]" />
+              <span className="w-8 h-8 rounded-sm bg-white/5 flex items-center justify-center group-hover:bg-[#B9B1A5]/10 group-hover:border-[#B9B1A5]/30 border border-transparent transition-all duration-300">
+                <MessageSquare className="w-3.5 h-3.5 text-[#B9B1A5]" />
               </span>
               Connect on WhatsApp
             </button>
@@ -141,8 +141,8 @@ export default function FooterSection({ onGetQuote }: FooterSectionProps) {
               className="flex items-center gap-3 text-sm text-[#E5E5E5]/70 hover:text-white transition-colors duration-300 group"
               id="footer-email-link"
             >
-              <span className="w-8 h-8 rounded-sm bg-white/5 flex items-center justify-center group-hover:bg-[#D4AF37]/10 group-hover:border-[#D4AF37]/30 border border-transparent transition-all duration-300">
-                <Mail className="w-3.5 h-3.5 text-[#D4AF37]" />
+              <span className="w-8 h-8 rounded-sm bg-white/5 flex items-center justify-center group-hover:bg-[#B9B1A5]/10 group-hover:border-[#B9B1A5]/30 border border-transparent transition-all duration-300">
+                <Mail className="w-3.5 h-3.5 text-[#B9B1A5]" />
               </span>
               info@eliornaturalstones.com
             </a>
@@ -156,12 +156,12 @@ export default function FooterSection({ onGetQuote }: FooterSectionProps) {
           Copyright © 2026 Elior natural stones. All Rights Reserved.
         </p>
         <p className="flex items-center gap-1.5" id="footer-creator">
-          Developed with <Sparkles className="w-3 h-3 text-[#D4AF37]" /> by{' '}
+          Developed with <Sparkles className="w-3 h-3 text-[#B9B1A5]" /> by{' '}
           <a
             href="https://chikklabs.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-white/60 hover:text-[#D4AF37] transition-colors duration-300"
+            className="text-white/60 hover:text-[#B9B1A5] transition-colors duration-300"
             id="footer-creator-link"
           >
             Chikkam Labs

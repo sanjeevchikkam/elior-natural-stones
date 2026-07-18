@@ -62,11 +62,11 @@ export default function QuoteModal({ isOpen, onClose }: QuoteModalProps) {
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.95, y: 15 }}
             transition={{ type: 'spring', duration: 0.5 }}
-            className="relative w-full max-w-lg bg-[#121212] border border-[#D4AF37]/30 rounded-lg p-6 md:p-8 shadow-2xl z-10 overflow-hidden"
+            className="relative w-full max-w-lg bg-[#121212] border border-[#B9B1A5]/30 rounded-lg p-6 md:p-8 shadow-2xl z-10 overflow-hidden"
             id="quote-modal-card"
           >
             {/* Subtle visual gold lighting highlight inside the modal */}
-            <div className="absolute top-0 right-0 w-32 h-32 bg-[#D4AF37]/5 blur-2xl rounded-full pointer-events-none" />
+            <div className="absolute top-0 right-0 w-32 h-32 bg-[#B9B1A5]/5 blur-2xl rounded-full pointer-events-none" />
 
             {/* Close Button */}
             <button
@@ -89,14 +89,14 @@ export default function QuoteModal({ isOpen, onClose }: QuoteModalProps) {
                 >
                   {/* Title */}
                   <div className="flex items-center gap-3 mb-6">
-                    <div className="p-2.5 bg-[#D4AF37]/10 rounded-sm border border-[#D4AF37]/25" id="modal-title-icon-wrapper">
-                      <Layers className="w-5 h-5 text-[#D4AF37]" />
+                    <div className="p-2.5 bg-[#B9B1A5]/10 rounded-sm border border-[#B9B1A5]/25" id="modal-title-icon-wrapper">
+                      <Layers className="w-5 h-5 text-[#B9B1A5]" />
                     </div>
                     <div>
                       <h2 className="text-xl md:text-2xl font-serif font-bold text-white tracking-wide" id="modal-title">
                         Enquiry
                       </h2>
-                      <p className="text-xs font-mono text-[#D4AF37] tracking-wider uppercase mt-1">
+                      <p className="text-xs font-mono text-[#B9B1A5] tracking-wider uppercase mt-1">
                         Get direct quarry pricing & details
                       </p>
                     </div>
@@ -120,7 +120,7 @@ export default function QuoteModal({ isOpen, onClose }: QuoteModalProps) {
                           onChange={(e) => setName(e.target.value)}
                           required
                           placeholder="e.g. Sanjeev Naidu Chikkam"
-                          className="w-full pl-11 pr-4 py-3 bg-black/40 border border-white/10 focus:border-[#D4AF37]/60 rounded-sm text-sm text-white placeholder-white/30 focus:outline-none transition-all duration-300 focus:bg-black/60 focus:shadow-[0_0_15px_rgba(212,175,55,0.1)]"
+                          className="w-full pl-11 pr-4 py-3 bg-black/40 border border-white/10 focus:border-[#B9B1A5]/60 rounded-sm text-sm text-white placeholder-white/30 focus:outline-none transition-all duration-300 focus:bg-black/60 focus:shadow-[0_0_15px_rgba(212,175,55,0.1)]"
                         />
                       </div>
                     </div>
@@ -141,7 +141,7 @@ export default function QuoteModal({ isOpen, onClose }: QuoteModalProps) {
                           onChange={(e) => setMobile(e.target.value)}
                           required
                           placeholder="e.g. +91 81259 58071"
-                          className="w-full pl-11 pr-4 py-3 bg-black/40 border border-white/10 focus:border-[#D4AF37]/60 rounded-sm text-sm text-white placeholder-white/30 focus:outline-none transition-all duration-300 focus:bg-black/60 focus:shadow-[0_0_15px_rgba(212,175,55,0.1)]"
+                          className="w-full pl-11 pr-4 py-3 bg-black/40 border border-white/10 focus:border-[#B9B1A5]/60 rounded-sm text-sm text-white placeholder-white/30 focus:outline-none transition-all duration-300 focus:bg-black/60 focus:shadow-[0_0_15px_rgba(212,175,55,0.1)]"
                         />
                       </div>
                     </div>
@@ -159,7 +159,7 @@ export default function QuoteModal({ isOpen, onClose }: QuoteModalProps) {
                           id="stone-category"
                           value={category}
                           onChange={(e) => setCategory(e.target.value)}
-                          className="w-full pl-11 pr-10 py-3 bg-black/40 border border-white/10 focus:border-[#D4AF37]/60 rounded-sm text-sm text-white placeholder-white/30 focus:outline-none transition-all duration-300 focus:bg-black/60 cursor-pointer appearance-none focus:shadow-[0_0_15px_rgba(212,175,55,0.1)]"
+                          className="w-full pl-11 pr-10 py-3 bg-black/40 border border-white/10 focus:border-[#B9B1A5]/60 rounded-sm text-sm text-white placeholder-white/30 focus:outline-none transition-all duration-300 focus:bg-black/60 cursor-pointer appearance-none focus:shadow-[0_0_15px_rgba(212,175,55,0.1)]"
                         >
                           {CATEGORIES.map((cat) => (
                             <option key={cat.id} value={cat.name} className="bg-[#121212] text-white py-2">
@@ -168,7 +168,7 @@ export default function QuoteModal({ isOpen, onClose }: QuoteModalProps) {
                           ))}
                         </select>
                         {/* Custom Elegant Arrow */}
-                        <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-[#D4AF37]">
+                        <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-[#B9B1A5]">
                           <svg className="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                             <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/>
                           </svg>
@@ -192,7 +192,7 @@ export default function QuoteModal({ isOpen, onClose }: QuoteModalProps) {
                           onChange={(e) => setSft(e.target.value)}
                           required
                           placeholder="Sft"
-                          className="w-full pl-11 pr-4 py-3 bg-black/40 border border-white/10 focus:border-[#D4AF37]/60 rounded-sm text-sm text-white placeholder-white/30 focus:outline-none transition-all duration-300 focus:bg-black/60 focus:shadow-[0_0_15px_rgba(212,175,55,0.1)]"
+                          className="w-full pl-11 pr-4 py-3 bg-black/40 border border-white/10 focus:border-[#B9B1A5]/60 rounded-sm text-sm text-white placeholder-white/30 focus:outline-none transition-all duration-300 focus:bg-black/60 focus:shadow-[0_0_15px_rgba(212,175,55,0.1)]"
                         />
                       </div>
                     </div>
@@ -200,7 +200,7 @@ export default function QuoteModal({ isOpen, onClose }: QuoteModalProps) {
                     {/* Submit Details Button */}
                     <button
                       type="submit"
-                      className="w-full mt-6 py-4 bg-[#D4AF37] hover:bg-[#bfa032] text-[#0B0B0B] font-bold text-xs uppercase tracking-widest transition-all duration-300 rounded-sm shadow-[0_10px_20px_rgba(212,175,55,0.2)] hover:shadow-[0_12px_25px_rgba(212,175,55,0.35)] flex items-center justify-center gap-2.5 group cursor-pointer"
+                      className="w-full mt-6 py-4 bg-[#B9B1A5] hover:bg-[#bfa032] text-[#0B0B0B] font-bold text-xs uppercase tracking-widest transition-all duration-300 rounded-sm shadow-[0_10px_20px_rgba(212,175,55,0.2)] hover:shadow-[0_12px_25px_rgba(212,175,55,0.35)] flex items-center justify-center gap-2.5 group cursor-pointer"
                       id="submit-quote-form"
                     >
                       Submit & Send Details
@@ -217,7 +217,7 @@ export default function QuoteModal({ isOpen, onClose }: QuoteModalProps) {
                   className="flex flex-col items-center justify-center py-10 text-center"
                   id="success-message-block"
                 >
-                  <div className="w-16 h-16 bg-[#D4AF37]/10 border border-[#D4AF37] rounded-full flex items-center justify-center mb-6 text-[#D4AF37]" id="success-icon-wrapper">
+                  <div className="w-16 h-16 bg-[#B9B1A5]/10 border border-[#B9B1A5] rounded-full flex items-center justify-center mb-6 text-[#B9B1A5]" id="success-icon-wrapper">
                     <Check className="w-8 h-8" />
                   </div>
                   <h3 className="text-xl font-serif font-bold text-white mb-2" id="success-title">
@@ -226,7 +226,7 @@ export default function QuoteModal({ isOpen, onClose }: QuoteModalProps) {
                   <p className="text-sm text-[#E5E5E5]/70 max-w-xs mb-6 font-light" id="success-description">
                     Opening WhatsApp to securely deliver your premium stone enquiry to Elior Natural Stones...
                   </p>
-                  <div className="flex items-center gap-2 text-xs font-mono text-[#D4AF37] tracking-widest uppercase animate-pulse">
+                  <div className="flex items-center gap-2 text-xs font-mono text-[#B9B1A5] tracking-widest uppercase animate-pulse">
                     <Sparkles className="w-4 h-4" />
                     Connecting...
                   </div>
