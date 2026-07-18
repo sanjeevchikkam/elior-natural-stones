@@ -56,7 +56,7 @@ export default function HeaderSection({ onGetQuote }: HeaderSectionProps) {
         {/* Left Side: Logo & Title */}
         <Link href="/" className="flex items-center gap-3 group focus:outline-none" id="header-logo-link">
           <div
-            className="relative w-10 h-10 rounded-full overflow-hidden border border-[#D4AF37]/40 p-[2px] transition-transform duration-500 group-hover:scale-105"
+            className="relative w-10 h-10 rounded-full overflow-hidden border border-[#B9B1A5]/40 p-[2px] transition-transform duration-500 group-hover:scale-105"
             id="header-logo-container"
           >
             <img
@@ -69,13 +69,13 @@ export default function HeaderSection({ onGetQuote }: HeaderSectionProps) {
           </div>
           <div className="flex flex-col">
             <span
-              className="text-white font-serif text-lg md:text-xl font-bold tracking-widest leading-none group-hover:text-[#D4AF37] transition-colors duration-300"
+              className="text-white font-serif text-lg md:text-xl font-bold tracking-widest leading-none group-hover:text-[#B9B1A5] transition-colors duration-300"
               id="header-brand-name"
             >
               ELIOR
             </span>
             <span
-              className="text-[10px] text-[#D4AF37] font-mono tracking-[0.3em] uppercase leading-none mt-1"
+              className="text-[10px] text-[#B9B1A5] font-mono tracking-[0.3em] uppercase leading-none mt-1"
               id="header-brand-sub"
             >
               Natural Stones
@@ -87,11 +87,11 @@ export default function HeaderSection({ onGetQuote }: HeaderSectionProps) {
         <nav className="hidden lg:flex items-center gap-8" id="desktop-nav">
           <Link
             href="/"
-            className="text-sm font-medium tracking-widest uppercase text-[#E5E5E5] hover:text-[#D4AF37] transition-colors duration-300 relative group py-2"
+            className="text-sm font-medium tracking-widest uppercase text-[#E5E5E5] hover:text-[#B9B1A5] transition-colors duration-300 relative group py-2"
             id="nav-item-home"
           >
             Home
-            <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#D4AF37] transition-all duration-300 group-hover:w-full" />
+            <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#B9B1A5] transition-all duration-300 group-hover:w-full" />
           </Link>
 
           {/* Interactive Products Hover Dropdown */}
@@ -105,13 +105,13 @@ export default function HeaderSection({ onGetQuote }: HeaderSectionProps) {
               onClick={() => {
                 window.location.href = "/products";
               }}
-              className="text-sm font-medium tracking-widest uppercase text-[#E5E5E5] hover:text-[#D4AF37] transition-colors duration-300 flex items-center gap-1.5 focus:outline-none cursor-pointer"
+              className="text-sm font-medium tracking-widest uppercase text-[#E5E5E5] hover:text-[#B9B1A5] transition-colors duration-300 flex items-center gap-1.5 focus:outline-none cursor-pointer"
               id="nav-item-products"
             >
               Products
               <ChevronDown
                 className={`w-4 h-4 transition-transform duration-300 ${
-                  isProductsHovered ? "rotate-180 text-[#D4AF37]" : "text-[#E5E5E5]"
+                  isProductsHovered ? "rotate-180 text-[#B9B1A5]" : "text-[#E5E5E5]"
                 }`}
               />
             </button>
@@ -132,9 +132,9 @@ export default function HeaderSection({ onGetQuote }: HeaderSectionProps) {
                       <Link
                         key={cat.id}
                         href={`/products?category=${cat.id}`}
-                        className="flex flex-col p-2.5 rounded-sm hover:bg-[#D4AF37]/10 transition-colors duration-200 group/item text-left"
+                        className="flex flex-col p-2.5 rounded-sm hover:bg-[#B9B1A5]/10 transition-colors duration-200 group/item text-left"
                       >
-                        <span className="text-xs font-mono font-semibold text-[#E5E5E5] group-hover/item:text-[#D4AF37] tracking-wider">
+                        <span className="text-xs font-mono font-semibold text-[#E5E5E5] group-hover/item:text-[#B9B1A5] tracking-wider">
                           {cat.name}
                         </span>
                         <span className="text-[10px] text-white/40 line-clamp-1 group-hover/item:text-white/60 mt-0.5">
@@ -150,29 +150,29 @@ export default function HeaderSection({ onGetQuote }: HeaderSectionProps) {
 
           <Link
             href="/projects"
-            className="text-sm font-medium tracking-widest uppercase text-[#E5E5E5] hover:text-[#D4AF37] transition-colors duration-300 relative group py-2"
+            className="text-sm font-medium tracking-widest uppercase text-[#E5E5E5] hover:text-[#B9B1A5] transition-colors duration-300 relative group py-2"
             id="nav-item-projects"
           >
             Projects
-            <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#D4AF37] transition-all duration-300 group-hover:w-full" />
+            <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#B9B1A5] transition-all duration-300 group-hover:w-full" />
           </Link>
 
           <Link
             href="/ourstory"
-            className="text-sm font-medium tracking-widest uppercase text-[#E5E5E5] hover:text-[#D4AF37] transition-colors duration-300 relative group py-2"
+            className="text-sm font-medium tracking-widest uppercase text-[#E5E5E5] hover:text-[#B9B1A5] transition-colors duration-300 relative group py-2"
             id="nav-item-our-story"
           >
             Our Story
-            <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#D4AF37] transition-all duration-300 group-hover:w-full" />
+            <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#B9B1A5] transition-all duration-300 group-hover:w-full" />
           </Link>
 
           <Link
             href="/contactus"
-            className="text-sm font-medium tracking-widest uppercase text-[#E5E5E5] hover:text-[#D4AF37] transition-colors duration-300 relative group py-2"
+            className="text-sm font-medium tracking-widest uppercase text-[#E5E5E5] hover:text-[#B9B1A5] transition-colors duration-300 relative group py-2"
             id="nav-item-contact"
           >
             Contact Us
-            <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#D4AF37] transition-all duration-300 group-hover:w-full" />
+            <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#B9B1A5] transition-all duration-300 group-hover:w-full" />
           </Link>
         </nav>
 
@@ -187,7 +187,7 @@ export default function HeaderSection({ onGetQuote }: HeaderSectionProps) {
                 window.open(whatsappUrl, "_blank", "noopener,noreferrer");
               }
             }}
-            className="hidden lg:inline-flex items-center gap-2 px-5 py-2.5 bg-transparent border border-[#D4AF37] text-[#D4AF37] hover:bg-[#D4AF37] hover:text-[#0B0B0B] text-xs font-semibold uppercase tracking-widest transition-all duration-300 rounded-sm hover:shadow-[0_0_15px_rgba(212,175,55,0.3)] cursor-pointer"
+            className="hidden lg:inline-flex items-center gap-2 px-5 py-2.5 bg-transparent border border-[#B9B1A5] text-[#B9B1A5] hover:bg-[#B9B1A5] hover:text-[#0B0B0B] text-xs font-semibold uppercase tracking-widest transition-all duration-300 rounded-sm hover:shadow-[0_0_15px_rgba(212,175,55,0.3)] cursor-pointer"
             id="get-quote-btn-desktop"
           >
             <Sparkles className="w-3.5 h-3.5" />
@@ -197,7 +197,7 @@ export default function HeaderSection({ onGetQuote }: HeaderSectionProps) {
           {/* Luxury Shopping Cart Icon Link */}
           <Link
             href="/cartpage"
-            className="relative p-2.5 bg-white/5 hover:bg-[#D4AF37]/10 border border-white/10 hover:border-[#D4AF37]/40 text-[#E5E5E5] hover:text-[#D4AF37] rounded-sm transition-all duration-300 flex items-center justify-center focus:outline-none"
+            className="relative p-2.5 bg-white/5 hover:bg-[#B9B1A5]/10 border border-white/10 hover:border-[#B9B1A5]/40 text-[#E5E5E5] hover:text-[#B9B1A5] rounded-sm transition-all duration-300 flex items-center justify-center focus:outline-none"
             id="cart-button-link"
             aria-label="View Shopping Cart"
           >
@@ -208,7 +208,7 @@ export default function HeaderSection({ onGetQuote }: HeaderSectionProps) {
                   initial={{ scale: 0 }}
                   animate={{ scale: 1 }}
                   exit={{ scale: 0 }}
-                  className="absolute -top-1.5 -right-1.5 bg-[#D4AF37] text-[#0B0B0B] text-[9px] font-mono font-bold w-4 h-4 rounded-full flex items-center justify-center shadow-md shadow-black/50"
+                  className="absolute -top-1.5 -right-1.5 bg-[#B9B1A5] text-[#0B0B0B] text-[9px] font-mono font-bold w-4 h-4 rounded-full flex items-center justify-center shadow-md shadow-black/50"
                   id="cart-badge-count"
                 >
                   {cartCount}
@@ -220,7 +220,7 @@ export default function HeaderSection({ onGetQuote }: HeaderSectionProps) {
           {/* Mobile Hamburger Toggle */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="lg:hidden p-2 text-white hover:text-[#D4AF37] transition-colors duration-300 focus:outline-none"
+            className="lg:hidden p-2 text-white hover:text-[#B9B1A5] transition-colors duration-300 focus:outline-none"
             aria-label="Toggle menu"
             id="mobile-menu-toggle"
           >
@@ -245,7 +245,7 @@ export default function HeaderSection({ onGetQuote }: HeaderSectionProps) {
                 <Link
                   href="/"
                   onClick={() => setIsOpen(false)}
-                  className="text-base font-semibold tracking-widest uppercase text-[#E5E5E5] hover:text-[#D4AF37] py-2 border-b border-white/5 transition-colors duration-300"
+                  className="text-base font-semibold tracking-widest uppercase text-[#E5E5E5] hover:text-[#B9B1A5] py-2 border-b border-white/5 transition-colors duration-300"
                   id="mobile-nav-item-home"
                 >
                   Home
@@ -254,7 +254,7 @@ export default function HeaderSection({ onGetQuote }: HeaderSectionProps) {
                 <Link
                   href="/products"
                   onClick={() => setIsOpen(false)}
-                  className="text-base font-semibold tracking-widest uppercase text-[#E5E5E5] hover:text-[#D4AF37] py-2 border-b border-white/5 transition-colors duration-300"
+                  className="text-base font-semibold tracking-widest uppercase text-[#E5E5E5] hover:text-[#B9B1A5] py-2 border-b border-white/5 transition-colors duration-300"
                   id="mobile-nav-item-products"
                 >
                   Products
@@ -262,7 +262,7 @@ export default function HeaderSection({ onGetQuote }: HeaderSectionProps) {
 
                 {/* Mobile Categories Accordion Section */}
                 <div className="flex flex-col gap-2 py-2 border-b border-white/5">
-                  <span className="text-xs font-mono font-semibold text-[#D4AF37] tracking-[0.2em] uppercase mb-1">
+                  <span className="text-xs font-mono font-semibold text-[#B9B1A5] tracking-[0.2em] uppercase mb-1">
                     Stone Categories
                   </span>
                   <div className="grid grid-cols-1 gap-2 pl-2">
@@ -271,7 +271,7 @@ export default function HeaderSection({ onGetQuote }: HeaderSectionProps) {
                         key={cat.id}
                         href={`/products?category=${cat.id}`}
                         onClick={() => setIsOpen(false)}
-                        className="text-sm font-medium text-[#E5E5E5] hover:text-[#D4AF37] py-1 transition-colors duration-200"
+                        className="text-sm font-medium text-[#E5E5E5] hover:text-[#B9B1A5] py-1 transition-colors duration-200"
                         id={`mobile-nav-cat-${cat.id}`}
                       >
                         {cat.name}
@@ -283,7 +283,7 @@ export default function HeaderSection({ onGetQuote }: HeaderSectionProps) {
                 <Link
                   href="/projects"
                   onClick={() => setIsOpen(false)}
-                  className="text-base font-semibold tracking-widest uppercase text-[#E5E5E5] hover:text-[#D4AF37] py-2 border-b border-white/5 transition-colors duration-300"
+                  className="text-base font-semibold tracking-widest uppercase text-[#E5E5E5] hover:text-[#B9B1A5] py-2 border-b border-white/5 transition-colors duration-300"
                   id="mobile-nav-item-projects"
                 >
                   Projects
@@ -292,7 +292,7 @@ export default function HeaderSection({ onGetQuote }: HeaderSectionProps) {
                 <Link
                   href="/ourstory"
                   onClick={() => setIsOpen(false)}
-                  className="text-base font-semibold tracking-widest uppercase text-[#E5E5E5] hover:text-[#D4AF37] py-2 border-b border-white/5 transition-colors duration-300"
+                  className="text-base font-semibold tracking-widest uppercase text-[#E5E5E5] hover:text-[#B9B1A5] py-2 border-b border-white/5 transition-colors duration-300"
                   id="mobile-nav-item-our-story"
                 >
                   Our Story
@@ -301,7 +301,7 @@ export default function HeaderSection({ onGetQuote }: HeaderSectionProps) {
                 <Link
                   href="/#contact"
                   onClick={() => setIsOpen(false)}
-                  className="text-base font-semibold tracking-widest uppercase text-[#E5E5E5] hover:text-[#D4AF37] py-2 border-b border-white/5 transition-colors duration-300"
+                  className="text-base font-semibold tracking-widest uppercase text-[#E5E5E5] hover:text-[#B9B1A5] py-2 border-b border-white/5 transition-colors duration-300"
                   id="mobile-nav-item-contact"
                 >
                   Contact Us
@@ -319,7 +319,7 @@ export default function HeaderSection({ onGetQuote }: HeaderSectionProps) {
                       window.open(whatsappUrl, "_blank", "noopener,noreferrer");
                     }
                   }}
-                  className="w-full text-center block px-6 py-3 bg-[#D4AF37] text-[#0B0B0B] text-sm font-bold uppercase tracking-widest transition-colors duration-300 hover:bg-[#bfa032] rounded-sm shadow-[0_4px_20px_rgba(212,175,55,0.2)] cursor-pointer"
+                  className="w-full text-center block px-6 py-3 bg-[#B9B1A5] text-[#0B0B0B] text-sm font-bold uppercase tracking-widest transition-colors duration-300 hover:bg-[#bfa032] rounded-sm shadow-[0_4px_20px_rgba(212,175,55,0.2)] cursor-pointer"
                   id="get-quote-btn-mobile"
                 >
                   Get Quote

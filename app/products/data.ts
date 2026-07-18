@@ -69,32 +69,140 @@ export const CATEGORIES: Category[] = [
 export const PRODUCTS: Product[] = [
   // Italian Marble (id: "1")
   {
-    id: "prod-101",
-    categoryId: "1",
-    name: "Statuario White Marble",
-    description: "Premium pure white base with dramatic, bold grey veining. The absolute epitome of luxury.",
-    price: "$85.00 / Sq.Ft",
-    image: "/cat01_01.png",
-    rating: 5.0
-  },
-  {
-    id: "prod-102",
-    categoryId: "1",
-    name: "Calacatta Gold Premium",
-    description: "Rare Italian marble featuring warm gold and grey veins on a magnificent milky-white canvas.",
-    price: "$98.00 / Sq.Ft",
-    image: "/cat01_02.png",
-    rating: 4.9
-  },
-  {
-    id: "prod-103",
-    categoryId: "1",
-    name: "Carrara Classic White",
-    description: "Elegant and soft blue-grey feathered veining on a light grey background, a classic Italian favorite.",
-    price: "$65.00 / Sq.Ft",
-    image: "/cat01_03.png",
-    rating: 4.8
-  },
+  id: "prod-101",
+  categoryId: "1",
+  name: "Sugar Beige",
+  description: "Elegant beige granite with soft natural textures, ideal for luxurious flooring, countertops, and wall cladding.",
+  price: "$82.00 / Sq.Ft",
+  image: "/Cat01_01 Sugar Beige.jpg",
+  rating: 5.0
+},
+{
+  id: "prod-102",
+  categoryId: "1",
+  name: "Ottaman Beige",
+  description: "Premium beige stone featuring subtle veining that adds warmth and sophistication to modern interiors.",
+  price: "$89.00 / Sq.Ft",
+  image: "/Cat01_02 Ottaman Beige.jpg",
+  rating: 4.9
+},
+{
+  id: "prod-103",
+  categoryId: "1",
+  name: "Dyna Beige",
+  description: "Classic beige granite with flowing natural patterns, perfect for elegant flooring and feature walls.",
+  price: "$78.00 / Sq.Ft",
+  image: "/Cat01_03 Dyna Beige.jpg",
+  rating: 4.8
+},
+{
+  id: "prod-104",
+  categoryId: "1",
+  name: "Regal Beige",
+  description: "A timeless beige surface with refined textures, offering durability and a premium architectural finish.",
+  price: "$84.00 / Sq.Ft",
+  image: "/Cat01_04 Regal Beige.jpg",
+  rating: 4.9
+},
+{
+  id: "prod-105",
+  categoryId: "1",
+  name: "D-martino",
+  description: "Distinctive granite with rich earthy tones and natural movement, suitable for both residential and commercial spaces.",
+  price: "$91.00 / Sq.Ft",
+  image: "/Cat01_05 D-martino.jpg",
+  rating: 4.8
+},
+{
+  id: "prod-106",
+  categoryId: "1",
+  name: "Crema Nuova",
+  description: "Smooth cream-colored granite with elegant veining, creating a bright and luxurious atmosphere in any space.",
+  price: "$86.00 / Sq.Ft",
+  image: "/Cat01_06 Crema Nuova.jpg",
+  rating: 5.0
+},
+{
+  id: "prod-107",
+  categoryId: "1",
+  name: "Satuario",
+  description: "Inspired by premium Italian marble, featuring bold grey veining on a pristine white background for a luxurious appearance.",
+  price: "$99.00 / Sq.Ft",
+  image: "/Cat01_07 Satuario.jpg",
+  rating: 5.0
+},
+{
+  id: "prod-108",
+  categoryId: "1",
+  name: "Vietnam White",
+  description: "Pure white natural stone with a clean and elegant finish, ideal for modern interiors and premium flooring.",
+  price: "$93.00 / Sq.Ft",
+  image: "/Cat01_08 Vietnam White.jpg",
+  rating: 4.9
+},
+{
+  id: "prod-109",
+  categoryId: "1",
+  name: "Platino Grey",
+  description: "Contemporary grey granite with fine mineral patterns, offering durability and timeless style for indoor and outdoor use.",
+  price: "$80.00 / Sq.Ft",
+  image: "/Cat01_09 Platino Grey.jpg",
+  rating: 4.8
+},
+{
+  id: "prod-110",
+  categoryId: "1",
+  name: "Velencia",
+  description: "Elegant natural stone with warm neutral tones, perfect for stylish flooring, staircases, and decorative walls.",
+  price: "$83.00 / Sq.Ft",
+  image: "/Cat01_10 Velencia.jpg",
+  rating: 4.7
+},
+{
+  id: "prod-111",
+  categoryId: "1",
+  name: "Hilton Grey",
+  description: "Sophisticated grey granite with subtle textures, designed to complement modern kitchens, bathrooms, and commercial spaces.",
+  price: "$88.00 / Sq.Ft",
+  image: "/Cat01_11 Hilton Grey.jpg",
+  rating: 4.9
+},
+{
+  id: "prod-112",
+  categoryId: "1",
+  name: "Galala Beige",
+  description: "Natural beige stone with soft patterns and excellent durability, making it a versatile choice for interiors and exteriors.",
+  price: "$79.00 / Sq.Ft",
+  image: "/Cat01_12 Galala Beige.jpg",
+  rating: 4.8
+},
+{
+  id: "prod-113",
+  categoryId: "1",
+  name: "Botochino",
+  description: "Luxury beige marble-inspired surface featuring delicate veining and a polished finish for premium architectural designs.",
+  price: "$92.00 / Sq.Ft",
+  image: "/Cat01_13 Botochino.jpg",
+  rating: 5.0
+},
+{
+  id: "prod-114",
+  categoryId: "1",
+  name: "Auroro Beige",
+  description: "Warm beige granite with natural elegance and lasting strength, suitable for countertops, flooring, and wall applications.",
+  price: "$87.00 / Sq.Ft",
+  image: "/Cat01_14 Auroro Beige.jpg",
+  rating: 4.9
+},
+{
+  id: "prod-115",
+  categoryId: "1",
+  name: "Mocha Crema Leather",
+  description: "Premium leather-finish granite in rich mocha tones, offering a unique textured surface for luxurious interiors and exterior facades.",
+  price: "$96.00 / Sq.Ft",
+  image: "/Cat01_15 Mocha Crema Leather.jpg",
+  rating: 5.0
+},
 
   // Granites (id: "2")
   {
