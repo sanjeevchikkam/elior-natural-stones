@@ -169,7 +169,7 @@ export default function HeaderSection({ onGetQuote }: HeaderSectionProps) {
           <Link
             href="/contactus"
             className="text-sm font-medium tracking-widest uppercase text-[#E5E5E5] hover:text-[#B9B1A5] transition-colors duration-300 relative group py-2"
-            id="nav-item-contact"
+            id="contact-us-page-root"
           >
             Contact Us
             <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#B9B1A5] transition-all duration-300 group-hover:w-full" />
