@@ -19,7 +19,7 @@ const CATEGORY_IMAGES: { [key: string]: string } = {
 
 export default function CategoriesSection() {
   return (
-    <section className="py-20 bg-[#0B0B0B] border-t border-white/5 relative z-10" id="categories-section">
+    <section className="relative overflow-hidden py-20 bg-[#0B0B0B] border-t border-white/5 z-10" id="categories-section">
       {/* Background radial soft gold glow */}
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[500px] h-[500px] bg-[#B9B1A5]/3 blur-[150px] rounded-full pointer-events-none" />
 

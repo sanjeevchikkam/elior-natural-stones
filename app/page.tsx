@@ -25,7 +25,7 @@ export default function Page() {
         <CategoriesSection />
         <StorySection />
         <ProjectsSection />
-        <ContactSection />
+        <ContactSection /> 
       </main>
       
       {/* 3. Footer branding & contact section */}
