@@ -32,8 +32,8 @@ export default function FooterSection({ onGetQuote }: FooterSectionProps) {
           <div className="flex items-center gap-3" id="footer-logo-row">
             <div className="relative w-9 h-9 rounded-full overflow-hidden border border-[#B9B1A5]/30 p-[1.5px]" id="footer-logo-wrapper">
               <img
-                src="/sample1.png"
-                alt="MK Logo"
+                src="/elior-logo.png"
+                alt="Elior Logo"
                 referrerPolicy="no-referrer"
                 className="w-full h-full object-cover rounded-full"
                 id="footer-logo-img"

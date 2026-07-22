@@ -60,7 +60,7 @@ export default function HeaderSection({ onGetQuote }: HeaderSectionProps) {
             id="header-logo-container"
           >
             <img
-              src="/sample1.png"
+              src="/elior-logo.png"
               alt="Elior natural stones"
               referrerPolicy="no-referrer"
               className="w-full h-full object-cover rounded-full"
