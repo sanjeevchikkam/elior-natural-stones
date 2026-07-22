@@ -233,65 +233,518 @@ export const PRODUCTS: Product[] = [
     rating: 4.8
   },
 
-  // Slate Stone (id: "3")
+  // Slate Stone (Category ID: "3")
   {
     id: "prod-301",
     categoryId: "3",
-    name: "Multi-Color Himachal Slate",
-    description: "Stunning cleft-face slate with a kaleidoscope of rustic gold, bronze, grey, and copper tones.",
+    name: "Black Slate",
+    description: "",
     price: "$24.00 / Sq.Ft",
-    image: "/cat03_01.png",
+    image: "/Cat03_01 Black Slate.jpg",
     rating: 4.6
   },
   {
     id: "prod-302",
     categoryId: "3",
-    name: "Silver Grey Slate Planks",
-    description: "Contemporary silver-charcoal tone with a delicate natural cleft texture, great for accent walls.",
-    price: "$26.50 / Sq.Ft",
-    image: "/cat03_02.png",
-    rating: 4.7
-  },
-
-  // Lime Stone (id: "4")
-  {
-    id: "prod-401",
-    categoryId: "4",
-    name: "Kota Blue Limestone",
-    description: "Cool steel blue-grey natural limestone with extreme hardness, ideal for durable outdoor decking.",
-    price: "$19.50 / Sq.Ft",
-    image: "/cat04_01.png",
-    rating: 4.5
+    name: "Black Rustic",
+    description: "",
+    price: "$24.00 / Sq.Ft",
+    image: "/Cat03_02 Black Rustic.jpg",
+    rating: 4.6
   },
   {
-    id: "prod-402",
-    categoryId: "4",
-    name: "Tandur Yellow Limestone",
-    description: "Warm golden-yellow limestone with a hand-cut texture that brings an ancient rustic charm.",
-    price: "$21.00 / Sq.Ft",
-    image: "/cat04_02.png",
+    id: "prod-303",
+    categoryId: "3",
+    name: "Indian Autumn",
+    description: "",
+    price: "$24.00 / Sq.Ft",
+    image: "/Cat03_03 Indian Autumn.jpg",
+    rating: 4.6
+  },
+  {
+    id: "prod-304",
+    categoryId: "3",
+    name: "Gold Rustic",
+    description: "",
+    price: "$24.00 / Sq.Ft",
+    image: "/Cat03_04 Gold Rustic.jpg",
+    rating: 4.6
+  },
+  {
+    id: "prod-305",
+    categoryId: "3",
+    name: "California Gold",
+    description: "",
+    price: "$24.00 / Sq.Ft",
+    image: "/Cat03_05 California Gold.jpg",
+    rating: 4.6
+  },
+  {
+    id: "prod-306",
+    categoryId: "3",
+    name: "SP Autumn",
+    description: "",
+    price: "$24.00 / Sq.Ft",
+    image: "/Cat03_06 SP Autumn.jpg",
+    rating: 4.6
+  },
+  {
+    id: "prod-307",
+    categoryId: "3",
+    name: "Multi Colour",
+    description: "",
+    price: "$24.00 / Sq.Ft",
+    image: "/Cat03_07 Multi Colour.jpg",
+    rating: 4.6
+  },
+  {
+    id: "prod-308",
+    categoryId: "3",
+    name: "Grey Slate",
+    description: "",
+    price: "$24.00 / Sq.Ft",
+    image: "/Cat03_08 Grey Slate.jpg",
+    rating: 4.6
+  },
+  {
+    id: "prod-309",
+    categoryId: "3",
+    name: "Chocolate",
+    description: "",
+    price: "$24.00 / Sq.Ft",
+    image: "/Cat03_09 Chocolate.jpg",
+    rating: 4.6
+  },
+  {
+    id: "prod-310",
+    categoryId: "3",
+    name: "Grey Quartz",
+    description: "",
+    price: "$24.00 / Sq.Ft",
+    image: "/Cat03_10 Grey Quartz.jpg",
+    rating: 4.6
+  },
+  {
+    id: "prod-311",
+    categoryId: "3",
+    name: "M Green",
+    description: "",
+    price: "$24.00 / Sq.Ft",
+    image: "/Cat03_11 M Green.jpg",
+    rating: 4.6
+  },
+  {
+    id: "prod-312",
+    categoryId: "3",
+    name: "N Green",
+    description: "",
+    price: "$24.00 / Sq.Ft",
+    image: "/Cat03_12 N Green.jpg",
+    rating: 4.6
+  },
+  {
+    id: "prod-313",
+    categoryId: "3",
+    name: "S White 4x12",
+    description: "",
+    price: "$24.00 / Sq.Ft",
+    image: "/Cat03_13 S White 4x12.jpg",
+    rating: 4.6
+  },
+  {
+    id: "prod-314",
+    categoryId: "3",
+    name: "Black Chipout",
+    description: "",
+    price: "$24.00 / Sq.Ft",
+    image: "/Cat03_14 Black Chipout.jpg",
+    rating: 4.6
+  },
+  {
+    id: "prod-315",
+    categoryId: "3",
+    name: "Grey Quartz 4x12",
+    description: "",
+    price: "$24.00 / Sq.Ft",
+    image: "/Cat03_15 Grey Quartz 4x12.jpg",
+    rating: 4.6
+  },
+  {
+    id: "prod-316",
+    categoryId: "3",
+    name: "Black Slate Random Panel",
+    description: "",
+    price: "$24.00 / Sq.Ft",
+    image: "/Cat03_16 Black Slate Random Panel.jpg",
+    rating: 4.6
+  },
+  {
+    id: "prod-317",
+    categoryId: "3",
+    name: "Black Buching",
+    description: "",
+    price: "$24.00 / Sq.Ft",
+    image: "/Cat03_17 Black Buching.jpg",
+    rating: 4.6
+  },
+  {
+    id: "prod-318",
+    categoryId: "3",
+    name: "N Green Buching",
+    description: "",
+    price: "$24.00 / Sq.Ft",
+    image: "/Cat03_18 N Green Buching.jpg",
+    rating: 4.6
+  },
+  {
+    id: "prod-319",
+    categoryId: "3",
+    name: "Lime Green Buching",
+    description: "",
+    price: "$24.00 / Sq.Ft",
+    image: "/Cat03_19 Lime Green Buching.jpg",
+    rating: 4.6
+  },
+  {
+    id: "prod-320",
+    categoryId: "3",
+    name: "Lime Pink Buching",
+    description: "",
+    price: "$24.00 / Sq.Ft",
+    image: "/Cat03_20 Lime Pink Buching.jpg",
+    rating: 4.6
+  },
+  {
+    id: "prod-321",
+    categoryId: "3",
+    name: "Black Slate Panel",
+    description: "",
+    price: "$24.00 / Sq.Ft",
+    image: "/Cat03_21 Black Slate Panel.jpg",
+    rating: 4.6
+  },
+  {
+    id: "prod-322",
+    categoryId: "3",
+    name: "Indian Autumn Panel",
+    description: "",
+    price: "$24.00 / Sq.Ft",
+    image: "/Cat03_22 Indian Autumn Panel.jpg",
+    rating: 4.6
+  },
+  {
+    id: "prod-323",
+    categoryId: "3",
+    name: "SP Autumn Panel",
+    description: "",
+    price: "$24.00 / Sq.Ft",
+    image: "/Cat03_23 SP Autumn Panel.jpg",
+    rating: 4.6
+  },
+  {
+    id: "prod-324",
+    categoryId: "3",
+    name: "Black Rustic Panel",
+    description: "",
+    price: "$24.00 / Sq.Ft",
+    image: "/Cat03_24 Black Rustic Panel.jpg",
+    rating: 4.6
+  },
+  {
+    id: "prod-325",
+    categoryId: "3",
+    name: "Black Waterfall",
+    description: "",
+    price: "$24.00 / Sq.Ft",
+    image: "/Cat03_25 Black Waterfall.jpg",
+    rating: 4.6
+  },
+  {
+    id: "prod-326",
+    categoryId: "3",
+    name: "Multi Colour Quarry Cut Panel",
+    description: "",
+    price: "$24.00 / Sq.Ft",
+    image: "/Cat03_26 Multi Colour quarry cut panel.jpg",
+    rating: 4.6
+  },
+  {
+    id: "prod-327",
+    categoryId: "3",
+    name: "Multi Colour Waterfall",
+    description: "",
+    price: "$24.00 / Sq.Ft",
+    image: "/Cat03_27 Multi Colour Waterfall.jpg",
     rating: 4.6
   },
 
+  // Lime Stone (id: "4")
+  // Limestone (Category ID: "4")
+{
+  id: "prod-401",
+  categoryId: "4",
+  name: "Kadapa Black Polish",
+  description: "",
+  price: "$19.50 / Sq.Ft",
+  image: "/Cat04_01 Kadapa Black Polish.jpg",
+  rating: 4.5
+},
+{
+  id: "prod-402",
+  categoryId: "4",
+  name: "Kadapa Black Honed Finish",
+  description: "",
+  price: "$19.50 / Sq.Ft",
+  image: "/Cat04_02 Kadapa Black Honed Finish.jpg",
+  rating: 4.5
+},
+{
+  id: "prod-403",
+  categoryId: "4",
+  name: "Kadapa Black Rough",
+  description: "",
+  price: "$19.50 / Sq.Ft",
+  image: "/Cat04_03 Kadapa Black Rough.jpg",
+  rating: 4.5
+},
+{
+  id: "prod-404",
+  categoryId: "4",
+  name: "Kadapa Black Flaming",
+  description: "",
+  price: "$19.50 / Sq.Ft",
+  image: "/Cat04_04 Kadapa  Black Flaming.jpg",
+  rating: 4.5
+},
+{
+  id: "prod-405",
+  categoryId: "4",
+  name: "Tandur Blue Rough",
+  description: "",
+  price: "$19.50 / Sq.Ft",
+  image: "/Cat04_05 Tandur Blue Rough.jpg",
+  rating: 4.5
+},
+{
+  id: "prod-406",
+  categoryId: "4",
+  name: "Tandur Blue Polish",
+  description: "",
+  price: "$19.50 / Sq.Ft",
+  image: "/Cat04_06 Tandur Blue Polish.jpg",
+  rating: 4.5
+},
+{
+  id: "prod-407",
+  categoryId: "4",
+  name: "Tandur Blue Leather",
+  description: "",
+  price: "$19.50 / Sq.Ft",
+  image: "/Cat04_07 Tandur Blue Leather.jpg",
+  rating: 4.5
+},
+{
+  id: "prod-408",
+  categoryId: "4",
+  name: "Tandur Blue Satin Finish",
+  description: "",
+  price: "$19.50 / Sq.Ft",
+  image: "/Cat04_08 Tandur Blue Satin Finish.jpg",
+  rating: 4.5
+},
+{
+  id: "prod-409",
+  categoryId: "4",
+  name: "Tandur Yellow Rough",
+  description: "",
+  price: "$19.50 / Sq.Ft",
+  image: "/Cat04_09 Tandur Yellow Rough.jpg",
+  rating: 4.5
+},
+{
+  id: "prod-410",
+  categoryId: "4",
+  name: "Tandur Yellow Leather",
+  description: "",
+  price: "$19.50 / Sq.Ft",
+  image: "/Cat04_10 Tandur Yellow Leather.jpg",
+  rating: 4.5
+},
+{
+  id: "prod-411",
+  categoryId: "4",
+  name: "Kurnool Grey Polish",
+  description: "",
+  price: "$19.50 / Sq.Ft",
+  image: "/Cat04_11 Kurnool Grey Polish.jpg",
+  rating: 4.5
+},
+{
+  id: "prod-412",
+  categoryId: "4",
+  name: "Kurnool Grey Satin Finish",
+  description: "",
+  price: "$19.50 / Sq.Ft",
+  image: "/Cat04_12 Kurnool Grey Satin Finish.jpg",
+  rating: 4.5
+},
+
   // Sandstone (id: "5")
-  {
-    id: "prod-501",
-    categoryId: "5",
-    name: "Teakwood Sandstone",
-    description: "Features a beautiful wood-like natural banding pattern in warm yellow, tan, and brown tones.",
-    price: "$28.00 / Sq.Ft",
-    image: "/cat05_01.png",
-    rating: 4.8
-  },
-  {
-    id: "prod-502",
-    categoryId: "5",
-    name: "Rainbow Sandstone Slabs",
-    description: "Stunning sedimentary layers of purples, pinks, and golds, giving a grand landscape look.",
-    price: "$32.00 / Sq.Ft",
-    image: "/cat05_02.png",
-    rating: 4.9
-  },
+  // Cobbles (Category ID: "5")
+// Cobbles (Category ID: "5")
+{
+  id: "prod-501",
+  categoryId: "5",
+  name: "White Granite Cobbles Handcut",
+  description: "",
+  price: "$28.00 / Sq.Ft",
+  image: "/Cat05_01 White Granite Cobbles Handcut.jpg",
+  rating: 4.8
+},
+{
+  id: "prod-502",
+  categoryId: "5",
+  name: "Black Granite Cobble Handcut",
+  description: "",
+  price: "$28.00 / Sq.Ft",
+  image: "/Cat05_02 Black Granite Cobble Handcut.jpg",
+  rating: 4.8
+},
+{
+  id: "prod-503",
+  categoryId: "5",
+  name: "Black Granite Cobbles Handcut",
+  description: "",
+  price: "$28.00 / Sq.Ft",
+  image: "/Cat05_02 Black Granite Cobbles Handcut.jpg",
+  rating: 4.8
+},
+{
+  id: "prod-504",
+  categoryId: "5",
+  name: "Yellow Granite Cobble Handcut",
+  description: "",
+  price: "$28.00 / Sq.Ft",
+  image: "/Cat05_03 Yellow Granite Cobble Handcut.jpg",
+  rating: 4.8
+},
+{
+  id: "prod-505",
+  categoryId: "5",
+  name: "Yellow Granite Cobbles Handcut",
+  description: "",
+  price: "$28.00 / Sq.Ft",
+  image: "/Cat05_03 Yellow Granite Cobbles Handcut.jpg",
+  rating: 4.8
+},
+{
+  id: "prod-506",
+  categoryId: "5",
+  name: "Pink Granite Cobble Handcut",
+  description: "",
+  price: "$28.00 / Sq.Ft",
+  image: "/Cat05_04 Pink Granite Cobble Handcut.jpg",
+  rating: 4.8
+},
+{
+  id: "prod-507",
+  categoryId: "5",
+  name: "Pink Granite Cobbles Handcut",
+  description: "",
+  price: "$28.00 / Sq.Ft",
+  image: "/Cat05_04 Pink Granite Cobbles Handcut.jpg",
+  rating: 4.8
+},
+{
+  id: "prod-508",
+  categoryId: "5",
+  name: "White Granite Cobble 1inch Machine Cut",
+  description: "",
+  price: "$28.00 / Sq.Ft",
+  image: "/Cat05_05 White Granite Cobble 1inch Machine cut.jpg",
+  rating: 4.8
+},
+{
+  id: "prod-509",
+  categoryId: "5",
+  name: "White Granite Cobbles 1inch Machine Cut",
+  description: "",
+  price: "$28.00 / Sq.Ft",
+  image: "/Cat05_05 White Granite Cobbles 1inch Machine cut.jpg",
+  rating: 4.8
+},
+{
+  id: "prod-510",
+  categoryId: "5",
+  name: "Black Granite Cobbles 1inch Machine Cut",
+  description: "",
+  price: "$28.00 / Sq.Ft",
+  image: "/Cat05_06 Black Granite Cobbles 1inch Machine cut.jpg",
+  rating: 4.8
+},
+{
+  id: "prod-511",
+  categoryId: "5",
+  name: "Black Granite 1inch Machine Cut Flaming",
+  description: "",
+  price: "$28.00 / Sq.Ft",
+  image: "/Cat05_07 Black Granite 1inch Machine cut Flaming.jpg",
+  rating: 4.8
+},
+{
+  id: "prod-512",
+  categoryId: "5",
+  name: "White 1inch Machine Cut Flaming",
+  description: "",
+  price: "$28.00 / Sq.Ft",
+  image: "/Cat05_08 White 1inch Machine cut Flaming.jpg",
+  rating: 4.8
+},
+{
+  id: "prod-513",
+  categoryId: "5",
+  name: "Black Granite Full Box Cut Flaming",
+  description: "",
+  price: "$28.00 / Sq.Ft",
+  image: "/Cat05_09 Black Granite Full Box Cut Flaming.jpg",
+  rating: 4.8
+},
+{
+  id: "prod-514",
+  categoryId: "5",
+  name: "White Granite Full Box Cut Flaming",
+  description: "",
+  price: "$28.00 / Sq.Ft",
+  image: "/Cat05_10 White Granite Full Box Cut Flaming.jpg",
+  rating: 4.8
+},
+{
+  id: "prod-515",
+  categoryId: "5",
+  name: "Black Granite 1inch Machine Cut Bush Hammered",
+  description: "",
+  price: "$28.00 / Sq.Ft",
+  image: "/Cat05_11 Black Granite 1inch Machine cut Bush Hammered.jpg",
+  rating: 4.8
+},
+{
+  id: "prod-516",
+  categoryId: "5",
+  name: "Lime Black Cobbles Handcut",
+  description: "",
+  price: "$28.00 / Sq.Ft",
+  image: "/Cat05_12 Lime Black cobbles Handcut.jpg",
+  rating: 4.8
+},
+{
+  id: "prod-517",
+  categoryId: "5",
+  name: "Lime Black Cobbles",
+  description: "",
+  price: "$28.00 / Sq.Ft",
+  image: "/Cat05_12 Lime Black cobbles.jpg",
+  rating: 4.8
+},
 
   // Quartz (id: "6")
   {
