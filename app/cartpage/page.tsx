@@ -73,7 +73,7 @@ export default function CartPage() {
   };
 
   return (
-    <div className="min-h-screen bg-[#0B0B0B] text-[#E5E5E5] selection:bg-[#D4AF37]/30 selection:text-[#D4AF37]" id="cart-page-root">
+    <div className="min-h-screen bg-[#0B0B0B] text-[#E5E5E5] selection:bg-[#B9B1A5]/30 selection:text-[#B9B1A5]" id="cart-page-root">
       
       {/* 1. Header Navigation */}
       <HeaderSection onGetQuote={() => setIsQuoteOpen(true)} />
@@ -85,7 +85,7 @@ export default function CartPage() {
         <div className="mb-8">
           <Link
             href="/products"
-            className="inline-flex items-center gap-2 text-xs font-mono text-[#D4AF37] hover:text-[#bfa032] uppercase tracking-widest transition"
+            className="inline-flex items-center gap-2 text-xs font-mono text-[#B9B1A5] hover:text-[#bfa032] uppercase tracking-widest transition"
             id="back-products-breadcrumb"
           >
             <ArrowLeft className="w-4 h-4" />
@@ -107,7 +107,7 @@ export default function CartPage() {
               className="text-center py-20 border border-white/5 rounded-sm bg-white/[0.01] flex flex-col items-center justify-center p-6"
               id="empty-cart-state"
             >
-              <div className="w-16 h-16 bg-[#D4AF37]/10 border border-[#D4AF37]/25 rounded-full flex items-center justify-center text-[#D4AF37] mb-6">
+              <div className="w-16 h-16 bg-[#B9B1A5]/10 border border-[#B9B1A5]/25 rounded-full flex items-center justify-center text-[#B9B1A5] mb-6">
                 <ShoppingBag className="w-8 h-8" />
               </div>
               <h2 className="text-xl font-serif font-bold text-white mb-2">
@@ -118,7 +118,7 @@ export default function CartPage() {
               </p>
               <Link
                 href="/products"
-                className="px-8 py-3 bg-[#D4AF37] hover:bg-[#bfa032] text-[#0B0B0B] text-xs font-bold uppercase tracking-widest transition-all rounded-sm shadow-[0_4px_15px_rgba(212,175,55,0.2)]"
+                className="px-8 py-3 bg-[#B9B1A5] hover:bg-[#bfa032] text-[#0B0B0B] text-xs font-bold uppercase tracking-widest transition-all rounded-sm shadow-[0_4px_15px_rgba(212,175,55,0.2)]"
                 id="empty-cart-cta"
               >
                 Browse Collections
@@ -144,7 +144,7 @@ export default function CartPage() {
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, x: -50 }}
                     transition={{ duration: 0.3 }}
-                    className="flex flex-col sm:flex-row items-center justify-between gap-4 p-4 bg-[#121212] border border-white/5 rounded-sm group hover:border-[#D4AF37]/20 transition-all duration-300"
+                    className="flex flex-col sm:flex-row items-center justify-between gap-4 p-4 bg-[#121212] border border-white/5 rounded-sm group hover:border-[#B9B1A5]/20 transition-all duration-300"
                     id={`cart-item-${item.id}`}
                   >
                     {/* Square Image & Title Column */}
@@ -158,7 +158,7 @@ export default function CartPage() {
                         />
                       </div>
                       <div className="space-y-1.5 w-full">
-                        <span className="text-[9px] font-mono tracking-wider text-[#D4AF37] uppercase block">
+                        <span className="text-[9px] font-mono tracking-wider text-[#B9B1A5] uppercase block">
                           {item.categoryName}
                         </span>
                         <div className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-6 flex-wrap">
@@ -174,7 +174,7 @@ export default function CartPage() {
                               placeholder="sft"
                               value={itemSfts[item.id] || ""}
                               onChange={(e) => handleSftChange(item.id, e.target.value)}
-                              className="w-24 bg-black/40 border border-white/10 focus:border-[#D4AF37]/60 rounded-sm text-[11px] py-1 px-2.5 text-white focus:outline-none transition font-mono"
+                              className="w-24 bg-black/40 border border-white/10 focus:border-[#B9B1A5]/60 rounded-sm text-[11px] py-1 px-2.5 text-white focus:outline-none transition font-mono"
                             />
                           </div>
                         </div>
@@ -197,9 +197,9 @@ export default function CartPage() {
 
               {/* Right Column: Order Summary & Estimate Form */}
               <div className="lg:col-span-4" id="cart-right-summary-column">
-                <div className="bg-[#121212] border border-[#D4AF37]/30 rounded-sm p-6 relative overflow-hidden space-y-6">
+                <div className="bg-[#121212] border border-[#B9B1A5]/30 rounded-sm p-6 relative overflow-hidden space-y-6">
                   {/* Glowing ambient backing */}
-                  <div className="absolute top-0 right-0 w-24 h-24 bg-[#D4AF37]/5 blur-2xl rounded-full pointer-events-none" />
+                  <div className="absolute top-0 right-0 w-24 h-24 bg-[#B9B1A5]/5 blur-2xl rounded-full pointer-events-none" />
 
                   <h3 className="text-lg font-serif font-bold text-white border-b border-white/5 pb-4">
                     Estimate Summary
@@ -207,7 +207,7 @@ export default function CartPage() {
 
                   {/* Direct Contact Form before WhatsApp handover */}
                   <form onSubmit={handleCheckout} className="space-y-4">
-                    <span className="text-xs font-mono font-bold text-[#D4AF37] uppercase tracking-wider block">
+                    <span className="text-xs font-mono font-bold text-[#B9B1A5] uppercase tracking-wider block">
                       Enquiry Contact Details (Required)
                     </span>
                     
@@ -219,7 +219,7 @@ export default function CartPage() {
                         placeholder="e.g. Sanjeev Chikkam"
                         value={name}
                         onChange={(e) => setName(e.target.value)}
-                        className="w-full bg-black/40 border border-white/10 focus:border-[#D4AF37]/60 rounded-sm text-xs py-2 px-3 text-white focus:outline-none transition"
+                        className="w-full bg-black/40 border border-white/10 focus:border-[#B9B1A5]/60 rounded-sm text-xs py-2 px-3 text-white focus:outline-none transition"
                         id="enquiry-name-input"
                       />
                     </div>
@@ -232,7 +232,7 @@ export default function CartPage() {
                         placeholder="e.g. +91 81259 58071"
                         value={mobile}
                         onChange={(e) => setMobile(e.target.value)}
-                        className="w-full bg-black/40 border border-white/10 focus:border-[#D4AF37]/60 rounded-sm text-xs py-2 px-3 text-white focus:outline-none transition"
+                        className="w-full bg-black/40 border border-white/10 focus:border-[#B9B1A5]/60 rounded-sm text-xs py-2 px-3 text-white focus:outline-none transition"
                         id="enquiry-mobile-input"
                       />
                     </div>
@@ -244,7 +244,7 @@ export default function CartPage() {
                         placeholder="e.g. Hyderabad, TS"
                         value={location}
                         onChange={(e) => setLocation(e.target.value)}
-                        className="w-full bg-black/40 border border-white/10 focus:border-[#D4AF37]/60 rounded-sm text-xs py-2 px-3 text-white focus:outline-none transition"
+                        className="w-full bg-black/40 border border-white/10 focus:border-[#B9B1A5]/60 rounded-sm text-xs py-2 px-3 text-white focus:outline-none transition"
                         id="enquiry-location-input"
                       />
                     </div>
@@ -256,7 +256,7 @@ export default function CartPage() {
                         value={message}
                         onChange={(e) => setMessage(e.target.value)}
                         rows={3}
-                        className="w-full bg-black/40 border border-white/10 focus:border-[#D4AF37]/60 rounded-sm text-xs py-2 px-3 text-white focus:outline-none transition resize-none"
+                        className="w-full bg-black/40 border border-white/10 focus:border-[#B9B1A5]/60 rounded-sm text-xs py-2 px-3 text-white focus:outline-none transition resize-none"
                         id="enquiry-message-input"
                       />
                     </div>
@@ -278,7 +278,7 @@ export default function CartPage() {
                         <button
                           key="checkoutbutton"
                           type="submit"
-                          className="w-full py-4 bg-[#D4AF37] hover:bg-[#bfa032] text-[#0B0B0B] font-bold text-xs uppercase tracking-widest rounded-sm transition-all duration-300 shadow-[0_4px_15px_rgba(212,175,55,0.2)] hover:shadow-[0_6px_20px_rgba(212,175,55,0.35)] flex items-center justify-center gap-2 group cursor-pointer"
+                          className="w-full py-4 bg-[#B9B1A5] hover:bg-[#bfa032] text-[#0B0B0B] font-bold text-xs uppercase tracking-widest rounded-sm transition-all duration-300 shadow-[0_4px_15px_rgba(212,175,55,0.2)] hover:shadow-[0_6px_20px_rgba(212,175,55,0.35)] flex items-center justify-center gap-2 group cursor-pointer"
                           id="submit-cart-whatsapp"
                         >
                           <MessageSquare className="w-3.5 h-3.5 text-[#0B0B0B]" />

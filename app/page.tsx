@@ -23,8 +23,8 @@ export default function Page() {
       <main id="main-content-layout">
         <HeroSection onGetQuote={() => setIsQuoteOpen(true)} />
         <CategoriesSection />
-        <StorySection />
         <ProjectsSection />
+        <StorySection />
         <ContactSection /> 
       </main>
       

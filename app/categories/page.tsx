@@ -7,22 +7,33 @@ import { motion } from 'motion/react';
 import { CATEGORIES } from '../products/data';
 
 const CATEGORY_IMAGES: { [key: string]: string } = {
-  "1": "/Cat01_03 Dyna Beige.jpg",
-  "2": "/cat02_01.png",
-  "3": "/cat03_01.png",
-  "4": "/cat04_01.png",
-  "5": "/cat05_01.png",
-  "6": "/cat06_01.png",
-  "7": "/cat07_01.png",
-  "8": "/cat08_01.png",
+  "1": "/Cat01.jpeg",
+  "2": "/cat02.jpeg",
+  "3": "/cat03.jpeg",
+  "4": "/cat04.jpeg",
+  "5": "/cat05.jpeg",
+  "6": "/cat06.jpeg",
+  "7": "/cat07.jpeg",
+  "8": "/cat08.jpeg",
+  "9": "/cat09.jpeg",
 };
 
 export default function CategoriesSection() {
   return (
     <section className="relative overflow-hidden py-20 bg-[#0B0B0B] border-t border-white/5 z-10" id="categories-section">
       {/* Background radial soft gold glow */}
-      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[500px] h-[500px] bg-[#B9B1A5]/3 blur-[150px] rounded-full pointer-events-none" />
+      <div className="absolute inset-0 z-0">
+      <Image
+        src="/background03.jpeg"
+        alt=""
+        fill
+        priority
+        className="object-cover"
+      />
 
+      {/* Dark overlay for readability */}
+      <div className="absolute inset-0 bg-[#0B0B0B]/25" />
+    </div>
       <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-16" id="categories-header-wrapper">
           <motion.div

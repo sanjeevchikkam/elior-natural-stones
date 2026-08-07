@@ -15,23 +15,47 @@ export default function HeroSection({ onGetQuote }: HeroSectionProps) {
 
   const backgroundImages = [
   {
-    url: "/sample1.png",
-    title: "Premium Granite Collection",
-    subtitle: "Elegant Surfaces for Modern Spaces",
-    tag: "DURABLE & TIMELESS"
-  },
-  {
-    url: "/sample2.jpg",
-    title: "Luxury Marble Designs",
-    subtitle: "Crafted for Homes & Commercial Projects",
-    tag: "ELEGANT & REFINED"
-  },
-  {
-    url: "/sample3.jpg",
-    title: "Natural Stone Excellence",
-    subtitle: "Transforming Interiors & Exteriors",
-    tag: "QUALITY & CRAFTSMANSHIP"
-  }
+  url: "/home01.jpeg",
+  title: "Premium Granite Collection",
+  subtitle: "Elegant Surfaces for Modern Spaces",
+  tag: "DURABLE & TIMELESS"
+},
+{
+  url: "/home02.jpeg",
+  title: "Luxury Marble Designs",
+  subtitle: "Crafted for Homes & Commercial Projects",
+  tag: "ELEGANT & REFINED"
+},
+{
+  url: "/home03.jpeg",
+  title: "Natural Stone Excellence",
+  subtitle: "Transforming Interiors & Exteriors",
+  tag: "QUALITY & CRAFTSMANSHIP"
+},
+{
+  url: "/home04.jpeg",
+  title: "Exquisite Stone Finishes",
+  subtitle: "Designed to Elevate Every Space",
+  tag: "PREMIUM & SOPHISTICATED"
+},
+{
+  url: "/home05.jpeg",
+  title: "Timeless Natural Beauty",
+  subtitle: "Distinctive Stones for Exceptional Spaces",
+  tag: "NATURAL & DISTINCTIVE"
+},
+{
+  url: "/home06.jpeg",
+  title: "Architectural Stone Collection",
+  subtitle: "Built for Inspired Interiors & Exteriors",
+  tag: "STRONG & VERSATILE"
+},
+{
+  url: "/home07.jpeg",
+  title: "Signature Stone Selection",
+  subtitle: "Exceptional Materials for Remarkable Spaces",
+  tag: "CRAFTED & TIMELESS"
+}
 ];
 
   // Automatic slideshow

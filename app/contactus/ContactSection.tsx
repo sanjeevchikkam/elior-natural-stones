@@ -50,6 +50,16 @@ export default function ContactSection() {
   return (
     <section className="py-24 bg-[#0B0B0B] text-[#E5E5E5] relative overflow-hidden border-t border-white/5" id="contact-us-section">
       {/* Visual background ambient details */}
+      <div className="absolute inset-0 z-0">
+    <img
+      src="/background01.jpeg"
+      alt=""
+      className="w-full h-full object-cover"
+    />
+
+    {/* Dark overlay */}
+    <div className="absolute inset-0 bg-[#0B0B0B]/70" />
+  </div>
       <div className="absolute top-1/3 left-1/4 w-[400px] h-[400px] bg-[#B9B1A5]/2 blur-[130px] rounded-full pointer-events-none" />
       <div className="absolute bottom-1/4 right-1/4 w-[400px] h-[400px] bg-[#B9B1A5]/2 blur-[130px] rounded-full pointer-events-none" />
 

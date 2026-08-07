@@ -14,56 +14,70 @@ export interface Product {
   image: string;
   rating: number;
 }
-
 export const CATEGORIES: Category[] = [
   {
     id: "1",
     name: "ITALIAN MARBLE",
     slug: "italian-marble",
-    description: "Exquisite, hand-picked Italian marble known for its high-gloss mirror finish and natural crystalline patterns that bring unmatched grandeur to interiors."
+    description:
+      "Exquisite, hand-picked Italian marble known for its high-gloss mirror finish and natural crystalline patterns that bring unmatched grandeur to interiors.",
   },
   {
     id: "2",
     name: "GRANITES",
     slug: "granites",
-    description: "Highly durable, scratch-resistant volcanic rock offering premium natural patterns, perfect for high-traffic countertops and luxury flooring."
+    description:
+      "Highly durable, scratch-resistant volcanic rock offering premium natural patterns, perfect for high-traffic countertops and luxury flooring.",
   },
   {
     id: "3",
     name: "SLATE STONE",
     slug: "slate-stone",
-    description: "Foliated metamorphic stone featuring a natural rustic split face. Excellent for textured interior wall cladding and non-slip outdoor pathways."
+    description:
+      "Foliated metamorphic stone featuring a natural rustic split face. Excellent for textured interior wall cladding and non-slip outdoor pathways.",
   },
   {
     id: "4",
     name: "LIME STONE",
     slug: "lime-stone",
-    description: "Sedimentary natural limestone featuring subtle, warm organic tones and high durability for exterior paving and classic wall facades."
+    description:
+      "Sedimentary natural limestone featuring subtle, warm organic tones and high durability for exterior paving and classic wall facades.",
   },
   {
     id: "5",
-    name: "SANDSTONE",
-    slug: "sandstone",
-    description: "Warm desert-hued natural sandstone with elegant sedimentary layering and premium grip. Perfect for pool decks, patios, and landscaping."
+    name: "COBBLE STONE",
+    slug: "cobble-stone",
+    description:
+      "Robust, historical-grade cobblestones providing a solid, rustic paving solution for royal driveways, garden entries, and heavy-use pathways.",
   },
   {
     id: "6",
-    name: "QUARTZ",
-    slug: "quartz",
-    description: "Engineered high-performance stone comprising pure quartz crystals, offering a non-porous surface, stain-resistance, and magnificent patterns."
+    name: "PEBBLES",
+    slug: "pebbles",
+    description:
+      "Tumbled and naturally polished premium river stones. Perfect for garden landscaping, water fountains, and creating soothing Zen pathways.",
   },
   {
     id: "7",
-    name: "PEBBLES",
-    slug: "pebbles",
-    description: "Tumbled and naturally polished premium river stones. Perfect for garden landscaping, water fountains, and creating soothing Zen pathways."
+    name: "SANDSTONE",
+    slug: "sandstone",
+    description:
+      "Warm desert-hued natural sandstone with elegant sedimentary layering and premium grip. Perfect for pool decks, patios, and landscaping.",
   },
   {
     id: "8",
-    name: "COBBLE STONES",
-    slug: "cobble-stones",
-    description: "Robust, historical-grade cobblestones providing a solid, rustic paving solution for royal driveways, garden entries, and heavy-use pathways."
-  }
+    name: "STONE SCULPTURES",
+    slug: "stone-sculptures",
+    description:
+      "Handcrafted natural stone sculptures shaped by skilled artisans, bringing timeless character, artistic expression, and sculptural elegance to refined spaces.",
+  },
+  {
+    id: "9",
+    name: "QUARTZ",
+    slug: "quartz",
+    description:
+      "Engineered high-performance stone comprising pure quartz crystals, offering a non-porous surface, stain-resistance, and magnificent patterns.",
+  },
 ];
 
 export const PRODUCTS: Product[] = [
@@ -589,7 +603,6 @@ export const PRODUCTS: Product[] = [
   rating: 4.5
 },
 
-  // Sandstone (id: "5")
   // Cobbles (Category ID: "5")
 // Cobbles (Category ID: "5")
 {
@@ -709,6 +722,7 @@ export const PRODUCTS: Product[] = [
   image: "/Cat05_09 Black Granite Full Box Cut Flaming.jpg",
   rating: 4.8
 },
+
 {
   id: "prod-514",
   categoryId: "5",
@@ -746,30 +760,11 @@ export const PRODUCTS: Product[] = [
   rating: 4.8
 },
 
-  // Quartz (id: "6")
+
+  // Pebbles (id: "6")
   {
     id: "prod-601",
     categoryId: "6",
-    name: "Carrara Crystal Quartz",
-    description: "Premium engineered quartz surface mimicking Italian marble with ultra-durable non-porous tech.",
-    price: "$55.00 / Sq.Ft",
-    image: "/cat06_01.png",
-    rating: 4.9
-  },
-  {
-    id: "prod-602",
-    categoryId: "6",
-    name: "Sparkling Black Quartz",
-    description: "Intense black engineered quartz surface embedded with thousands of reflective mirror flecks.",
-    price: "$58.00 / Sq.Ft",
-    image: "/cat06_02.png",
-    rating: 4.8
-  },
-
-  // Pebbles (id: "7")
-  {
-    id: "prod-701",
-    categoryId: "7",
     name: "Snow White Pebbles",
     description: "Naturally tumbled smooth marble pebbles of brilliant white color. Ideal for decorative planters.",
     price: "$12.00 / Bag",
@@ -777,16 +772,26 @@ export const PRODUCTS: Product[] = [
     rating: 4.8
   },
   {
-    id: "prod-702",
-    categoryId: "7",
+    id: "prod-602",
+    categoryId: "6",
     name: "Polished Mixed River Pebbles",
     description: "High-gloss, hand-sorted smooth river pebbles in earthy black, yellow, and brown tones.",
     price: "$14.50 / Bag",
     image: "/cat07_02.png",
     rating: 4.7
   },
+  //category id = 7, sandstone
+  {
+    id: "prod-701",
+    categoryId: "7",
+    name: "Basalt Black Cobbles",
+    description: "Prestige dark charcoal and charcoal black basalt cobblestones, naturally elegant and heavy-duty.",
+    price: "$4.20 / Piece",
+    image: "/cat08_02.png",
+    rating: 4.9
+  },
 
-  // Cobble Stones (id: "8")
+  // Stone SCULPTURES  (id: "8")
   {
     id: "prod-801",
     categoryId: "8",
@@ -804,5 +809,25 @@ export const PRODUCTS: Product[] = [
     price: "$4.20 / Piece",
     image: "/cat08_02.png",
     rating: 4.9
-  }
+  },
+
+  // Quartz (id: "9")
+  {
+    id: "prod-901",
+    categoryId: "9",
+    name: "Carrara Crystal Quartz",
+    description: "Premium engineered quartz surface mimicking Italian marble with ultra-durable non-porous tech.",
+    price: "$55.00 / Sq.Ft",
+    image: "/cat06_01.png",
+    rating: 4.9
+  },
+  {
+    id: "prod-902",
+    categoryId: "9",
+    name: "Sparkling Black Quartz",
+    description: "Intense black engineered quartz surface embedded with thousands of reflective mirror flecks.",
+    price: "$58.00 / Sq.Ft",
+    image: "/cat06_02.png",
+    rating: 4.8
+  },
 ];

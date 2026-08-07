@@ -101,7 +101,7 @@ export default function ProjectsPage() {
   };
 
   return (
-    <div className="min-h-screen bg-[#0B0B0B] text-[#E5E5E5] selection:bg-[#D4AF37]/30 selection:text-[#D4AF37]" id="projects-page-root">
+    <div className="min-h-screen bg-[#0B0B0B] text-[#E5E5E5] selection:bg-[#B9B1A5]/30 selection:text-[#B9B1A5]" id="projects-page-root">
       
       {/* Header section */}
       <HeaderSection onGetQuote={() => setIsQuoteOpen(true)} />
@@ -126,13 +126,13 @@ export default function ProjectsPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
           >
-            <span className="text-[10px] md:text-xs font-mono text-[#D4AF37] tracking-[0.4em] uppercase" id="projects-tagline">
+            <span className="text-[10px] md:text-xs font-mono text-[#B9B1A5] tracking-[0.4em] uppercase" id="projects-tagline">
               Masterpieces in Natural Medium
             </span>
             <h1 className="text-3xl md:text-5xl font-serif font-bold text-white tracking-wide mt-3 mb-4" id="projects-title">
               Our Architectural Portfolio
             </h1>
-            <div className="w-16 h-[1px] bg-[#D4AF37] mx-auto mb-4" />
+            <div className="w-16 h-[1px] bg-[#B9B1A5] mx-auto mb-4" />
             <p className="text-xs md:text-sm text-[#E5E5E5]/60 font-light max-w-xl mx-auto leading-relaxed" id="projects-subtitle">
               Sourcing the extraordinary, polishing to absolute physical perfection. Witness our luxury natural stones applied in elite residential & commercial spaces.
             </p>
@@ -143,14 +143,14 @@ export default function ProjectsPage() {
       {/* Flagship Horizontal Scrolling Projects Section */}
       <section className="py-24 bg-[#0B0B0B] relative overflow-hidden" id="horizontal-scroller-section">
         {/* Ambient background decoration */}
-        <div className="absolute top-1/4 left-1/3 w-[500px] h-[500px] bg-[#D4AF37]/2 blur-[150px] rounded-full pointer-events-none" />
+        <div className="absolute top-1/4 left-1/3 w-[500px] h-[500px] bg-[#B9B1A5]/2 blur-[150px] rounded-full pointer-events-none" />
 
         <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
           
           {/* Header controls layout */}
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12" id="scroller-header">
             <div>
-              <span className="text-[9px] font-mono text-[#D4AF37] tracking-[0.3em] uppercase block mb-2">Featured Showcases</span>
+              <span className="text-[9px] font-mono text-[#B9B1A5] tracking-[0.3em] uppercase block mb-2">Featured Showcases</span>
               <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif font-bold text-white tracking-wide">
                 Seamless Stone Formats
               </h2>
@@ -163,7 +163,7 @@ export default function ProjectsPage() {
             <div className="flex items-center gap-3" id="scroller-controls">
               <button
                 onClick={() => scroll("left")}
-                className="w-11 h-11 rounded-full border border-white/10 hover:border-[#D4AF37]/50 flex items-center justify-center text-white/70 hover:text-[#D4AF37] hover:bg-white/[0.02] active:scale-95 transition-all duration-300 cursor-pointer"
+                className="w-11 h-11 rounded-full border border-white/10 hover:border-[#B9B1A5]/50 flex items-center justify-center text-white/70 hover:text-[#B9B1A5] hover:bg-white/[0.02] active:scale-95 transition-all duration-300 cursor-pointer"
                 aria-label="Scroll left"
                 id="scroll-left-btn"
               >
@@ -171,14 +171,14 @@ export default function ProjectsPage() {
               </button>
               
               <div className="flex gap-1.5 font-mono text-xs text-white/40 items-center px-2">
-                <span className="text-[#D4AF37] font-bold">0{activeProjectIdx + 1}</span>
+                <span className="text-[#B9B1A5] font-bold">0{activeProjectIdx + 1}</span>
                 <span>/</span>
                 <span>03</span>
               </div>
 
               <button
                 onClick={() => scroll("right")}
-                className="w-11 h-11 rounded-full border border-white/10 hover:border-[#D4AF37]/50 flex items-center justify-center text-white/70 hover:text-[#D4AF37] hover:bg-white/[0.02] active:scale-95 transition-all duration-300 cursor-pointer"
+                className="w-11 h-11 rounded-full border border-white/10 hover:border-[#B9B1A5]/50 flex items-center justify-center text-white/70 hover:text-[#B9B1A5] hover:bg-white/[0.02] active:scale-95 transition-all duration-300 cursor-pointer"
                 aria-label="Scroll right"
                 id="scroll-right-btn"
               >
@@ -198,11 +198,11 @@ export default function ProjectsPage() {
             {LUXURY_PROJECTS.map((project) => (
               <div 
                 key={project.id}
-                className="w-[88vw] sm:w-[75vw] md:w-[65vw] lg:w-[850px] shrink-0 snap-start bg-[#121212] border border-white/5 hover:border-[#D4AF37]/25 rounded-sm p-4 md:p-6 transition-all duration-500 group relative flex flex-col lg:flex-row gap-6 md:gap-8 shadow-2xl"
+                className="w-[88vw] sm:w-[75vw] md:w-[65vw] lg:w-[850px] shrink-0 snap-start bg-[#121212] border border-white/5 hover:border-[#B9B1A5]/25 rounded-sm p-4 md:p-6 transition-all duration-500 group relative flex flex-col lg:flex-row gap-6 md:gap-8 shadow-2xl"
                 id={`project-card-${project.id}`}
               >
                 {/* Decorative absolute corner year tag */}
-                <div className="absolute top-4 right-4 bg-black/60 backdrop-blur-md border border-white/10 px-3 py-1 rounded-full text-[9px] font-mono tracking-widest text-[#D4AF37]/90 z-20">
+                <div className="absolute top-4 right-4 bg-black/60 backdrop-blur-md border border-white/10 px-3 py-1 rounded-full text-[9px] font-mono tracking-widest text-[#B9B1A5]/90 z-20">
                   EST. {project.year}
                 </div>
 
@@ -228,17 +228,17 @@ export default function ProjectsPage() {
                 {/* Right Side: Editorial Information Content */}
                 <div className="flex flex-col justify-between flex-grow py-2">
                   <div className="space-y-4">
-                    <div className="flex items-center gap-2 text-[10px] font-mono text-[#D4AF37] uppercase tracking-wider">
+                    <div className="flex items-center gap-2 text-[10px] font-mono text-[#B9B1A5] uppercase tracking-wider">
                       <MapPin className="w-3.5 h-3.5" />
                       {project.location}
                     </div>
 
-                    <h3 className="text-xl md:text-2xl font-serif font-bold text-white group-hover:text-[#D4AF37] transition-colors duration-300 tracking-wide leading-snug">
+                    <h3 className="text-xl md:text-2xl font-serif font-bold text-white group-hover:text-[#B9B1A5] transition-colors duration-300 tracking-wide leading-snug">
                       {project.title}
                     </h3>
 
                     {/* Divider line */}
-                    <div className="w-12 h-[1px] bg-white/10 group-hover:bg-[#D4AF37]/50 transition-colors duration-500" />
+                    <div className="w-12 h-[1px] bg-white/10 group-hover:bg-[#B9B1A5]/50 transition-colors duration-500" />
 
                     <div className="space-y-2">
                       <span className="text-[10px] font-mono uppercase text-white/40 block tracking-widest">Premium Material Sourced</span>
@@ -281,7 +281,7 @@ export default function ProjectsPage() {
                     setActiveProjectIdx(dotIdx);
                   }
                 }}
-                className={`h-1.5 transition-all duration-300 rounded-full cursor-pointer ${activeProjectIdx === dotIdx ? "w-8 bg-[#D4AF37]" : "w-2 bg-white/15 hover:bg-white/30"}`}
+                className={`h-1.5 transition-all duration-300 rounded-full cursor-pointer ${activeProjectIdx === dotIdx ? "w-8 bg-[#B9B1A5]" : "w-2 bg-white/15 hover:bg-white/30"}`}
                 aria-label={`Go to slide ${dotIdx + 1}`}
               />
             ))}
@@ -295,7 +295,7 @@ export default function ProjectsPage() {
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left" id="credentials-inner-layout">
             <div className="space-y-2">
-              <span className="text-[10px] font-mono text-[#D4AF37] uppercase tracking-wider block">1. Perfect Matching</span>
+              <span className="text-[10px] font-mono text-[#B9B1A5] uppercase tracking-wider block">1. Perfect Matching</span>
               <h4 className="text-base font-serif font-bold text-white">Full-Slab Dry Lay matching</h4>
               <p className="text-xs text-white/50 leading-relaxed font-light">
                 We perform virtual dry lay of custom quartzite and marble blocks, enabling architects to visualize grain matching before delivery.
@@ -303,7 +303,7 @@ export default function ProjectsPage() {
             </div>
             
             <div className="space-y-2 border-t md:border-t-0 md:border-l border-white/10 pt-6 md:pt-0 md:pl-8">
-              <span className="text-[10px] font-mono text-[#D4AF37] uppercase tracking-wider block">2. Strict Calibration</span>
+              <span className="text-[10px] font-mono text-[#B9B1A5] uppercase tracking-wider block">2. Strict Calibration</span>
               <h4 className="text-base font-serif font-bold text-white">Advanced Italian Calibration</h4>
               <p className="text-xs text-white/50 leading-relaxed font-light">
                 Every slab undergoes computerized thickness calibration matching, ensuring precise joints and uniform flooring structures.
@@ -311,7 +311,7 @@ export default function ProjectsPage() {
             </div>
 
             <div className="space-y-2 border-t md:border-t-0 md:border-l border-white/10 pt-6 md:pt-0 md:pl-8">
-              <span className="text-[10px] font-mono text-[#D4AF37] uppercase tracking-wider block">3. Direct Sourcing</span>
+              <span className="text-[10px] font-mono text-[#B9B1A5] uppercase tracking-wider block">3. Direct Sourcing</span>
               <h4 className="text-base font-serif font-bold text-white">100% Genuine Origin Tracing</h4>
               <p className="text-xs text-white/50 leading-relaxed font-light">
                 By eliminating intermediate brokers and trading layers, Elior guarantees direct quarry handoffs and pristine material grades.
@@ -328,9 +328,9 @@ export default function ProjectsPage() {
             initial={{ opacity: 0, scale: 0.98 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
-            className="border border-[#D4AF37]/20 bg-gradient-to-b from-[#121212] to-[#0D0D0D] rounded-sm p-8 md:p-12 relative"
+            className="border border-[#B9B1A5]/20 bg-gradient-to-b from-[#121212] to-[#0D0D0D] rounded-sm p-8 md:p-12 relative"
           >
-            <span className="text-[10px] font-mono text-[#D4AF37] tracking-[0.3em] uppercase block mb-3">Custom Consultations</span>
+            <span className="text-[10px] font-mono text-[#B9B1A5] tracking-[0.3em] uppercase block mb-3">Custom Consultations</span>
             <h2 className="text-2xl md:text-3xl font-serif font-bold text-white tracking-wide">Have a Custom Project in Mind?</h2>
             <p className="text-xs md:text-sm text-[#E5E5E5]/60 font-light leading-relaxed mt-4 mb-8 max-w-xl mx-auto">
               Our dynamic quarry supply line and experienced design consulting team ensure your stone projects are executed with zero margins of error. Let&apos;s work together.
@@ -339,7 +339,7 @@ export default function ProjectsPage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <button
                 onClick={() => setIsQuoteOpen(true)}
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-3.5 bg-[#D4AF37] text-[#0B0B0B] hover:bg-[#bfa032] text-xs font-bold uppercase tracking-widest transition-all duration-300 rounded-sm shadow-[0_4px_20px_rgba(212,175,55,0.25)] hover:shadow-[0_4px_25px_rgba(212,175,55,0.4)] cursor-pointer"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-3.5 bg-[#B9B1A5] text-[#0B0B0B] hover:bg-[#bfa032] text-xs font-bold uppercase tracking-widest transition-all duration-300 rounded-sm shadow-[0_4px_20px_rgba(212,175,55,0.25)] hover:shadow-[0_4px_25px_rgba(212,175,55,0.4)] cursor-pointer"
                 id="cta-quote-btn"
               >
                 Enquiry
@@ -348,7 +348,7 @@ export default function ProjectsPage() {
               
               <Link
                 href="/products"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-3.5 bg-transparent border border-white/20 hover:border-[#D4AF37] text-white hover:text-[#D4AF37] text-xs font-bold uppercase tracking-widest transition-all duration-300 rounded-sm hover:bg-white/[0.02]"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-3.5 bg-transparent border border-white/20 hover:border-[#B9B1A5] text-white hover:text-[#B9B1A5] text-xs font-bold uppercase tracking-widest transition-all duration-300 rounded-sm hover:bg-white/[0.02]"
                 id="cta-browse-btn"
               >
                 Browse Products

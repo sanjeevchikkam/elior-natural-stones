@@ -62,7 +62,7 @@ function ProductsContent({ onGetQuote }: { onGetQuote: () => void }) {
       <div className="mb-8 flex flex-col md:flex-row md:items-center justify-between gap-4">
         <Link
           href="/"
-          className="inline-flex items-center gap-2 text-xs font-mono text-[#D4AF37] hover:text-[#bfa032] uppercase tracking-widest transition"
+          className="inline-flex items-center gap-2 text-xs font-mono text-[#B9B1A5] hover:text-[#bfa032] uppercase tracking-widest transition"
           id="back-home-breadcrumb"
         >
           <ArrowLeft className="w-4 h-4" />
@@ -77,8 +77,8 @@ function ProductsContent({ onGetQuote }: { onGetQuote: () => void }) {
               href={`/products?category=${cat.id}`}
               className={`px-4 py-1.5 rounded-full text-xs font-mono uppercase tracking-wider transition-all duration-300 border whitespace-nowrap ${
                 selectedCategory?.id === cat.id
-                  ? "bg-[#D4AF37] text-[#0B0B0B] border-[#D4AF37]"
-                  : "bg-white/5 text-[#E5E5E5]/60 border-white/10 hover:border-[#D4AF37]/50 hover:text-white"
+                  ? "bg-[#B9B1A5] text-[#0B0B0B] border-[#B9B1A5]"
+                  : "bg-white/5 text-[#E5E5E5]/60 border-white/10 hover:border-[#B9B1A5]/50 hover:text-white"
               }`}
               id={`tab-cat-${cat.id}`}
             >
@@ -131,8 +131,8 @@ function ProductsContent({ onGetQuote }: { onGetQuote: () => void }) {
               id="category-rendering-layout"
             >
               {/* Category Header */}
-              <div className="max-w-4xl border-l-2 border-[#D4AF37] pl-6 py-2" id="category-intro-header">
-                <span className="text-xs font-mono font-bold tracking-[0.3em] text-[#D4AF37] uppercase">
+              <div className="max-w-4xl border-l-2 border-[#B9B1A5] pl-6 py-2" id="category-intro-header">
+                <span className="text-xs font-mono font-bold tracking-[0.3em] text-[#B9B1A5] uppercase">
                   Category {selectedCategory.id}
                 </span>
                 <h1 className="text-3xl md:text-5xl font-serif text-white font-bold tracking-tight mt-1 mb-4 uppercase">
@@ -148,7 +148,7 @@ function ProductsContent({ onGetQuote }: { onGetQuote: () => void }) {
                 {filteredProducts.map((prod) => (
                   <motion.div
                     key={prod.id}
-                    className="group bg-[#121212] border border-white/5 rounded-sm overflow-hidden flex flex-col justify-between hover:border-[#D4AF37]/30 hover:shadow-[0_10px_30px_rgba(0,0,0,0.5)] transition-all duration-300"
+                    className="group bg-[#121212] border border-white/5 rounded-sm overflow-hidden flex flex-col justify-between hover:border-[#B9B1A5]/30 hover:shadow-[0_10px_30px_rgba(0,0,0,0.5)] transition-all duration-300"
                     id={`product-card-${prod.id}`}
                   >
                     {/* Image block (Strict 1:1 Aspect Ratio) */}
@@ -162,7 +162,7 @@ function ProductsContent({ onGetQuote }: { onGetQuote: () => void }) {
                       />
                       {/* Premium rating overlay badge */}
                       {/* <div className="absolute top-4 right-4 bg-black/70 backdrop-blur-md border border-white/10 px-2 py-1 rounded-sm flex items-center gap-1">
-                        <Star className="w-3 h-3 text-[#D4AF37] fill-[#D4AF37]" />
+                        <Star className="w-3 h-3 text-[#B9B1A5] fill-[#B9B1A5]" />
                         <span className="text-[10px] font-mono font-bold text-white">{prod.rating.toFixed(1)}</span>
                       </div> */}
                     </div>
@@ -170,10 +170,10 @@ function ProductsContent({ onGetQuote }: { onGetQuote: () => void }) {
                     {/* Meta info details */}
                     <div className="p-5 flex-grow flex flex-col justify-between gap-4">
                       <div className="space-y-2">
-                        <span className="text-[10px] font-mono tracking-wider text-[#D4AF37] uppercase">
+                        <span className="text-[10px] font-mono tracking-wider text-[#B9B1A5] uppercase">
                           {selectedCategory.name}
                         </span>
-                        <h3 className="text-base font-semibold text-white tracking-wide leading-snug group-hover:text-[#D4AF37] transition-colors duration-200">
+                        <h3 className="text-base font-semibold text-white tracking-wide leading-snug group-hover:text-[#B9B1A5] transition-colors duration-200">
                           {prod.name}
                         </h3>
                         <p className="text-xs text-[#E5E5E5]/60 font-light leading-relaxed line-clamp-2">
@@ -184,7 +184,7 @@ function ProductsContent({ onGetQuote }: { onGetQuote: () => void }) {
                       {/* Pricing and Actions Row */}
                       <div className="flex items-center justify-between border-t border-white/5 pt-4 mt-2">
                         <div className="flex flex-col">
-                          <span className="text-[10px] font-mono uppercase text-[#D4AF37] tracking-wider font-semibold">
+                          <span className="text-[10px] font-mono uppercase text-[#B9B1A5] tracking-wider font-semibold">
                             Natural Finish
                           </span>
                         </div>
@@ -194,7 +194,7 @@ function ProductsContent({ onGetQuote }: { onGetQuote: () => void }) {
                           className={`px-4 py-2 rounded-sm text-xs font-mono font-bold uppercase tracking-wider flex items-center gap-1.5 transition-all duration-300 cursor-pointer ${
                             addedProductId === prod.id
                               ? "bg-emerald-600 text-white border border-emerald-500 shadow-[0_0_10px_rgba(16,185,129,0.2)]"
-                              : "bg-[#D4AF37] hover:bg-[#bfa032] text-[#0B0B0B] border border-transparent shadow-md hover:shadow-[0_4px_12px_rgba(212,175,55,0.2)]"
+                              : "bg-[#B9B1A5] hover:bg-[#bfa032] text-[#0B0B0B] border border-transparent shadow-md hover:shadow-[0_4px_12px_rgba(212,175,55,0.2)]"
                           }`}
                           id={`btn-add-to-cart-${prod.id}`}
                         >
@@ -233,7 +233,7 @@ export default function ProductsPage() {
   const [isQuoteOpen, setIsQuoteOpen] = useState(false);
 
   return (
-    <div className="min-h-screen bg-[#0B0B0B] text-[#E5E5E5] selection:bg-[#D4AF37]/30 selection:text-[#D4AF37]" id="products-page-root">
+    <div className="min-h-screen bg-[#0B0B0B] text-[#E5E5E5] selection:bg-[#B9B1A5]/30 selection:text-[#B9B1A5]" id="products-page-root">
       
       {/* 1. Header Navigation */}
       <HeaderSection onGetQuote={() => setIsQuoteOpen(true)} />
@@ -242,7 +242,7 @@ export default function ProductsPage() {
       <main id="products-grid-layout">
         <Suspense
           fallback={
-            <div className="min-h-screen flex items-center justify-center text-[#D4AF37] font-mono text-sm uppercase tracking-widest animate-pulse">
+            <div className="min-h-screen flex items-center justify-center text-[#B9B1A5] font-mono text-sm uppercase tracking-widest animate-pulse">
               Loading Products...
             </div>
           }

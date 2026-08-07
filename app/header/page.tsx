@@ -68,19 +68,20 @@ export default function HeaderSection({ onGetQuote }: HeaderSectionProps) {
             />
           </div>
           <div className="flex flex-col">
-            <span
-              className="text-white font-serif text-lg md:text-xl font-bold tracking-widest leading-none group-hover:text-[#B9B1A5] transition-colors duration-300"
-              id="header-brand-name"
-            >
-              ELIOR
-            </span>
-            <span
-              className="text-[10px] text-[#B9B1A5] font-mono tracking-[0.3em] uppercase leading-none mt-1"
-              id="header-brand-sub"
-            >
-              Natural Stones
-            </span>
-          </div>
+  <span
+    className="text-white font-serif text-2xl md:text-3xl font-extrabold tracking-[0.18em] leading-none group-hover:text-[#B9B1A5] transition-colors duration-300"
+    id="header-brand-name"
+  >
+    ELIOR
+  </span>
+
+  <span
+    className="text-xs md:text-sm text-[#B9B1A5] font-sans font-extrabold tracking-[0.28em] uppercase leading-none mt-2"
+    id="header-brand-sub"
+  >
+    Natural Stones
+  </span>
+</div>
         </Link>
 
         {/* Center: Desktop Navigation Menu */}

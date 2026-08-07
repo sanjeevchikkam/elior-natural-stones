@@ -18,7 +18,7 @@ export default function ContactUsPage() {
   const [isQuoteOpen, setIsQuoteOpen] = useState(false);
 
   return (
-    <div className="min-h-screen bg-[#0B0B0B] text-[#E5E5E5] selection:bg-[#D4AF37]/30 selection:text-[#D4AF37]" id="contact-us-page-root">
+    <div className="min-h-screen bg-[#0B0B0B] text-[#E5E5E5] selection:bg-[#B9B1A5]/30 selection:text-[#B9B1A5]" id="contact-us-page-root">
       
       {/* Header section */}
       <HeaderSection onGetQuote={() => setIsQuoteOpen(true)} />
@@ -43,13 +43,13 @@ export default function ContactUsPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
           >
-            <span className="text-[10px] md:text-xs font-mono text-[#D4AF37] tracking-[0.4em] uppercase" id="contact-page-tagline">
+            <span className="text-[10px] md:text-xs font-mono text-[#B9B1A5] tracking-[0.4em] uppercase" id="contact-page-tagline">
               Establish Premium Correspondence
             </span>
             <h1 className="text-3xl md:text-5xl font-serif font-bold text-white tracking-wide mt-3 mb-4" id="contact-page-title">
               Contact Elior Natural Stones
             </h1>
-            <div className="w-16 h-[1px] bg-[#D4AF37] mx-auto mb-4" />
+            <div className="w-16 h-[1px] bg-[#B9B1A5] mx-auto mb-4" />
             <p className="text-xs md:text-sm text-[#E5E5E5]/60 font-light max-w-xl mx-auto leading-relaxed" id="contact-page-subtitle">
               Have specific architectural blueprints or custom dimension guidelines? We are fully equipped to assist your sourcing requests.
             </p>
