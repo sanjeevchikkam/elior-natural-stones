@@ -42,7 +42,7 @@ export default function CategoriesSection() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <span className="text-[10px] md:text-xs text-[#B9B1A5] font-mono tracking-[0.4em] uppercase" id="categories-pre-title">
+            <span className="text-[14px] md:text-xs text-[#13100d] font-mono tracking-[0.4em] uppercase" id="categories-pre-title">
               Our Collections
             </span>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-white tracking-wide mt-3 mb-6" id="categories-main-title">
