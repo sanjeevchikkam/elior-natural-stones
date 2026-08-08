@@ -7,7 +7,7 @@ import { motion } from 'motion/react';
 import { CATEGORIES } from '../products/data';
 
 const CATEGORY_IMAGES: { [key: string]: string } = {
-  "1": "/Cat01.jpeg",
+  "1": "/cat01.jpeg",
   "2": "/cat02.jpeg",
   "3": "/cat03.jpeg",
   "4": "/cat04.jpeg",
